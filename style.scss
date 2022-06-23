@@ -1,0 +1,65 @@
+/*-- scss:defaults --*/
+
+$theme-light: #FFF4E0;
+$theme-yellow: #FFE0A8AA;
+$theme-orange: #D97146;
+$theme-red: #AD5769;
+$theme-grey: #515966;
+$theme-lightgrey: #90A1B8;
+
+$body-bg: $theme-light;
+$body-color: $theme-grey;
+$link-color: $theme-red;
+
+$code-block-font-size: 1em;
+
+/*-- scss:rules --*/
+
+.orange {
+  color: $theme-orange;
+  font-weight: bold;
+}
+
+.red {
+  color: $theme-red;
+  font-weight: bold;
+}
+
+.reveal pre code {
+  max-height: 1000px;
+}
+
+.reveal div.sourceCode pre code {
+    background-color: $theme-yellow;
+}
+
+.reveal .title {
+  background-color: $body-color;
+  color: $theme-yellow;
+}
+
+.reveal .footer {
+  color: $theme-grey;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.flow {
+  background-image: url(https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+	animation: animate 40s linear infinite;
+	font-weight: 900;
+}
+
+@keyframes animate {
+	0% {
+		background-position: left 0px top 10px;
+	}
+	40% {
+		background-position: left 800px top 10px;
+	}
+}

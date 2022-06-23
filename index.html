@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-99.9.9">
+  <title>index</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+
+  <script src="index_files/libs/clipboard/clipboard.min.js"></script>
+  <script src="index_files/libs/quarto-html/tabby.min.js"></script>
+  <script src="index_files/libs/quarto-html/popper.min.js"></script>
+  <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+  <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet">
+  <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.7em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-captioned.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-captioned) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-captioned.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-captioned .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-captioned .callout-caption  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-captioned.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-captioned.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-caption {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-caption {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-caption {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-captioned .callout-body > :last-child,
+  .callout.callout-captioned .callout-body > div > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-captioned .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-captioned) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-caption {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-caption {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-caption {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-caption {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-caption {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal #title-slide.center,
+    .reveal .title-slide.center,
+    .reveal .controls .navigate-left .controls-arrow,
+    .reveal .controls .navigate-right .controls-arrow {
+      margin-top: -15px;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="section" class="slide level2 title">
+<h2></h2>
+<div class="r-fit-text">
+<p>Improvements in</p>
+<p>text preprocessing</p>
+<p>using <span class="flow">textrecipes</span></p>
+</div>
+<div class="footer">
+<p><a href="google.com"></a></p>
+</div>
+</section>
+<section id="text-data" class="slide level2 textcenter">
+<h2>Text data</h2>
+<div class="cell">
+<div class="cell-output-stdout">
+<pre><code> [1] "pig-like mammals that are found inhabiting a wide range of different habitats throughout Africa, south of the Sahara. They are mostly solitary and spend their days sleeping in underground burrows to protect them from the heat of the African sun, emerging in the cooler evening to search for food. Their name originates from the Afrikaans language in South Africa and means Earth Pig, due to their long snout and pig-like body. Aardvarks are unique among animals as they are the only surviving species in their animal family. Until recently it was widely believed that they were most closely related to other insectivores such as armadillos and pangolins but this is not the case with their closest living relatives actually thought to be elephants.\nAardvark Anatomy and Appearance\nAardvarks have a unique appearance amongst mammals (and indeed all animals) as they display physical characteristics of a number of different animal species. They have medium-sized, almost hairless bodies and long snouts that make them look distinctly pig-like at first, with thick skin that both protects them from the hot sun and also from being harmed by insect bites. They are able to close their nostrils to stop dust and insects from entering their nose. They have tubular, rabbit-like ears that can stand on end but can also be folded flat to prevent dirt from entering them when they are underground. Aardvarks have strong, claws on each of their spade-like feet that along with the fact that their hind legs are longer than their front legs, makes them strong and capable diggers able to excavate vast amounts of earth at an alarming rate. Due to the fact that they spend most of their lives underground or out hunting in the dark at night, they have poor eyesight but are able to easily navigate their surrounding using their excellent sense of smell to both find prey and to sense potential danger.\nAardvark Distribution and Habitat\nAardvarks are found in a wide variety of different habitats throughout sub-Saharan Africa from dry deserts to the moist rainforest regions. The only stipulation (other than having good access to plenty of food and water) is to have good soil in which they can dig their extensive burrows. Despite being highly skilled at digging in sandy or clay soil types, rockier regions prove more of a challenge to create their underground homes so the aardvark will move to another area where soil conditions are better suited to digging. Their burrows can be up to 10 meters (33 ft) long in a home range that can be anywhere from 2 to 5 kilometres square. Their burrows often having multiple entrances and are always left head first so they are able to identify potential predators easily using their keen sense of smell.\nAardvark Behaviour and Lifestyle\nAardvarks are mainly solitary animals that come together only to mate and are never found in large groups. They live in underground burrows to protect them both from the hot daytime sun and from predators. Aardvarks are nocturnal mammals, only leaving the safety of the burrow under the cover of night when they go in search of food and water, often travelling several miles in order to find the biggest termite mounds guided by their excellent hearing and sense of smell. Despite often having a large burrow comprised of an extensive network of tunnels, aardvarks are also known to be able to quickly excavate small temporary burrows where they can protect themselves quickly rather than having to return to their original dwelling.\nAardvark Reproduction and Life Cycles\nAardvarks have specific mating seasons that occur every year. Depending on the region in which the aardvark lives young can be born either in October to November, or May to June in other areas. Known to have babies most years, female aardvarks give birth to a single offspring after a gestation period that usually lasts for around 7 months. Newborn aardvarks often weigh as little as 2kg and are born with hairless, pink skin in the safety of their mother's burrow. Baby aardvarks spend the first two weeks of their lives in the safety of the underground burrow before beginning to venture out with their mother under the cover of night. However, despite accompanying their mother in search of food they aren't weaned until they are around three months old. Young aardvarks live with their mother in her burrow until they are around six months old when they move out to dig a burrow of their own. Although their lifespan in the wild is not entirely clear, aardvarks tend to live for more than 20 years in captivity.\nAardvark Diet and Prey\nThe diet of aardvarks is mainly comprised of ants and termites, with termites being their preferred food source. Despite this though, they are known to also eat other insects such as beetles and insect larvae. Aardvarks are built to be insectivores, with strong limbs and claws that are capable of breaking into the harder outer shell of termite mounds very efficiently. Once they have broken into the mound they then use their long, sticky tongue to harvest the insects inside and eat them whole without chewing as they are then ground down in their muscular stomachs. One of the aardvarks most distinctive features is the fact that they have columnar cheek-teeth that serve no functional purpose at all. With some larger ant species that need to be chewed they use the incisors that are located towards the back of their mouths. Aardvarks are also able to use the same techniques to break into underground ant nests.\nAardvark Predators and Threats\nDespite the fact that aardvarks are nocturnal animals that live in the safety of underground burrows, they are threatened by a number of different predators throughout their natural environment. Lions, leopards, hyenas and large snakes (most notably pythons) are the main predators of aardvarks but this does vary depending on where the aardvark lives. Their main form of defence is to escape very quickly underground however, they are also known to be quite aggressive when threatened by these larger animals. Aardvarks use their strong, sharp claws to try and injure their attacker along with kicking the threatening animal with their powerful back legs. Aardvarks are also threatened by humans who hunt them and destroy their natural habitats.\nAardvark Interesting Facts and Features\nAardvarks use their long, sticky tongue to lap up to 50,000 insects a night from inside termite mounds or underground ant nests. Their worm-like tongues can actually grow up to 30 cm in length meaning they can reach more termites further into the mound. Their love of insects has actually led aardvarks also being known as Antbears! Interestingly enough, aardvarks are also thought to get almost all of the moisture they need from their prey meaning that they actually have to physically drink very little water. Aardvarks are thought to be one of the world's most prolific diggers with their strong limbs and claws and shovel-like feet helping them to be able to shift 2ft of soil in just 15 seconds!\nAardvark Relationship with Humans\nDue to the fact that they spend the daytime hours hidden in the safety of their underground burrows, only emerging under the cover of night to hunt for food, aardvarks are very seldom seen by many people. In some regions though, they are hunted by people for food and are becoming increasingly affected by expanding human populations as more of their natural habitats disappear to make way for growing settlements.\nAardvark Conservation Status and Life Today\nToday, aardvarks are listed by the IUCN as a species that is of Least Concern. Despite the fact that population numbers of aardvarks most certainly declined in some countries, in others, their numbers remain stable and they are often commonly found in both protected areas and regions with suitable habitats. They are however becoming increasingly affected by habitat loss in both the form of deforestation and expanding towns and villages. Due to their incredibly elusive nature, exact population sizes are not fully understood."                                                                                                                                                                          
+ [2] "is thought to be one of the oldest breeds of domestic Cat in the world, as the first domestication of the Abyssinian Cat occurred in Ancient Egyptian times. It is thought that Abyssinian Cats were bought and sold on the banks of the River Nile by traders, where the African Wild Cats (the ancestors of all domestic Cats) lived in their native habitats. Abyssinian Cats are most easily identified by their \"ticked\" fur which gives their coat a mottled appearance.\nAbyssinian Physical Characteristics\nThe Abyssinian Cat has a more wild looking appearance when compared to many breeds of domestic Cat in modern times. The Abyssinian Cat has large ears (meaning it has fantastic hearing) on top of its broad head, and the large almond-shaped eyes of the Abyssinian are still distinctive to this breed today. The Abyssinian Cat is a medium sized Cat with a long and muscular yet slender body and a relatively short tail. Although today, the Abyssinian can be found in a variety of different colours from blue to lilac to red, the dense, silky fur of the Abyssinian was originally silver or fawn in colour.\nAbyssinian Behaviour and Temperament\nThe Abyssinian Cat is known to be extremely intelligent and playful and is thought to be one of the most active breeds of domestic Cat as the Abyssinian seems to find it almost impossible to sit still. Abyssinian Cats are known to be extremely loyal and obedient felines making them easy to train in the house. The Abyssinian Cat is as wild in temperament as it is in appearance and enjoys to have a lot of attention as well as to keep active, which also tends make these Cats naturally good hunters.\nAbyssinian Breeding\nToday, most species of modern day domestic Cat are thought to have descended from, or be close descendants of, the Abyssinian Cats which were brought to England from Northern Africa in the 19th century. The Abyssinian Cat is thought to have been one of the first species of Wild Cat to have been domesticated by Humans, and is therefore one of the first wild animals to be treated like a household pet. The Abyssinian is now one of the most popular domestic Cat breeds in the USA and was thought to have been first exhibited in Crystal Palace in 1871 and the first official listing of the Abyssinian Cat breed was in 1882.\nAbyssinian Interesting Facts and Features\nIn Ancient Egypt, the Abyssinian Cat was seen as a sign from the Ancient Egyptian Gods and was therefore thought to be a sacred animal with legend deeming that the Abyssinian was the \"Child of the Gods\" and it was therefore worshipped on the banks of the Nile. This meant that the Egyptian people believed that the Abyssinian Cats were extremely special animals and they therefore looked after their Cats very well, with Abyssinian Cats often being depicted as sacred beings in Ancient Egyptian art and legend.\n&nbsp;"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+ [3] "is the smallest and most widely distributed species of Penguin in the Southern Ocean and is one of only two species of Penguin found on the Antarctic mainland (the other being the much larger Emperor Penguin). The Adelie Penguin was named in 1840 by French explorer Jules Dumont d'Urville who named the Penguin for his wife, Adelie. Adelie Penguins have adapted well to life in the Antarctic as these migratory Birds winter in the northern pack-ice before returning south to the Antarctic coast for the warmer summer months.\nAdelie Penguin Anatomy and Appearance\nThe Adelie Penguin is one of the most easily identifiable Penguin species with a blue-black back and completely white chest and belly. The head and beak of the Adelie Penguin are both black, with a distinctive white ring around each eye. The strong, pink feet of the Adelie Penguin are tough and bumpy with nails that not only aid the Adelie Penguin in climbing the rocky cliffs to reach its nesting grounds, but also help to push them along when they are sliding (rowing) along the ice. Adelie Penguins also use their webbed feet along with their small flippers to propel them along when swimming in the cold waters.\nAdelie Penguin Distribution and Habitat\nThe Adelie Penguin is one of the southern-most Birds in the world as it is found along the Antarctic coastline and on the islands close to it. During the winter months, the Adelie Penguins migrate north where they inhabit large platforms of ice and have better access to food. During the warmer summer months, the Adelie Penguins return south where they head for the coastal beaches in search of ice-free ground on the rocky slopes where they can build their nests. More than half a million Adelie Penguins have formed one of the largest animal colonies in the world on Ross Island, an island formed by the activities of four monstrous volcanoes in the Ross Sea.\nAdelie Penguin Behaviour and Lifestyle\nLike all species of Penguin, the Adelie Penguin is a highly sociable animal, gathering in large groups known as colonies, which often number thousands of Penguin individuals. Although Adelie Penguins are not known to be terribly territorial, it is not uncommon for adults to become aggressive over nesting sites, and have even been known to steal rocks from the nests of their neighbours. Adelie Penguins are also known to hunt in groups as it is thought to reduce the risk of being eaten by hungry predators. Adelie Penguins are constantly interacting with one another, with body language and specific eye movements thought to be the most common forms of communication.\nAdelie Penguin Reproduction and Life Cycles\nAdelie Penguins return to their breeding grounds during the Antarctic summer months of November and December. Their soft feet are well designed for walking on land making the trek to its nesting ground much easier as the Penguin fasts during this time. Adelie Penguin pairs mate for life in large colonies, with females laying two eggs a couple of days apart into a nest built from rocks. Both the male and female take it in turns to incubate their eggs while the other goes off to feed, for up to 10 days at a time. The Adelie Penguin chicks have an egg-tooth which is a bump on the top of their beaks, which helps them to break out of the egg. Once hatched, the parents still take it in turns to look after their young while the other goes off to gather food. After about a month, the chicks congregate in groups called crèches and are able to fend for themselves at sea when they are between 2 and 3 months old.\nAdelie Penguin Diet and Prey\nAdelie Penguins are strong and capable swimmers, obtaining all of their food from the sea. These Penguins primarily feed on krill which are found throughout the Antarctic ocean, as well as Molluscs, Squid and small Fish. The record of fossilised eggshell accumulated in the Adelie Penguin colonies over the last 38,000 years reveals a sudden change from a Fish-based diet to Krill that started two hundred years ago. This is thought to be due to the decline of the Antarctic Fur Seal in the late 1700s and Baleen Whales in the twentieth century. The reduction of competition from these predators has resulted in there being an abundance of Krill, which the Adelie Penguins are now able to exploit as an easier source of food.\nAdelie Penguin Predators and Threats\nAdult Adelie Penguins have no land based predators due to the uncompromising conditions that they inhabit. In the water however, the biggest threat to the Adelie Penguin is the Leopard Seal, which is one of the southern-most species of Seal and a dominant predator in the Southern Ocean. These Penguins have learnt to avoid these predators by swimming in large groups and not walking on thin ice. The Killer Whale is the other main predator of the Adelie Penguin, although they normally hunt larger species of Penguin further north. South Polar Skuas are known to prey on the Adelie Penguin's eggs if left unguarded, along with chicks that have strayed from a group.\nAdelie Penguin Interesting Facts and Features\nAdelie Penguins inhabit one of the coldest environments on Earth and so have a thick layer of fat under their skin helping to keep them warm. Their feathers help to insulate them and provide a waterproof layer for extra protection. The Adelie Penguin is a highly efficient hunter and is able to eat up to 2kg of food per day, with a breeding colony thought to consume around 9,000 tonnes of food over 24 hours. The flippers of the Adelie Penguin make them fantastic at swimming and they can dive to depths of 175 meters in search of food. Adelie Penguins do not have teeth as such but instead have tooth-shaped barbs on their tongue and on the roof of their mouths. These barbs do not exist for chewing but instead assist the Penguin to swallow slippery prey.\nAdelie Penguin Relationship with Humans\nA visit to the Adelie Penguin colonies has long since been on the programme for tourists to the Antarctic, who marvel at the vast numbers of them nesting on the beaches and hunting in the surrounding waters. This has meant that Adelie Penguins are one of the most well-known of all Penguin species today. Early explorers however, also hunted the Penguins both for their meat and their eggs in order to survive in such uncompromising conditions.\nAdelie Penguin Conservation Status and Life Today\nDespite having been confined to living on coastal Antarctica, Adelie Penguins are one of the most common and widespread Penguins in the southern hemisphere. With more than 2.5 million breeding pairs found throughout southern Antarctica, the Adelie Penguin has adapted well to its polar habitat. Scientists have also been known to use Adelie Penguin nesting patterns as indicators of climate change, noticing that they are able to nest on beaches that were previously covered in ice. The Adelie Penguin is listed as Least Concern.\n&nbsp;"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+ [4] "thought to be one of the oldest toy Dog breeds, appearing in Germany during the 17th century. Although the Affenpinscher then was bigger than the Dog we know today, it is thought that the ancestors of these Dogs were around much earlier, being depicted in paintings as early as the 15th century. The Affenpinscher was first bred and kept as a form of pest control in kitchens and stables, as these active Terriers proved effective at keeping rat numbers down. By the late 1800s, the breed was fully established in southern Germany and was a favoured Dog of the rich and famous. The Affenpinscher was imported in the USA after the second world war, where today, more Affenpinschers exist than anywhere else in the world combined.\nAffenpinscher Physical Characteristics\nAffenpinschers have a distinctive appearance that is often associated with terriers. The small body of the Affenpinscher is covered in coarse, wiry fur that tends to be either black or grey in colour, and is actually quite long for such a small Dog. The head of the Affenpinscher is domed, with a short muzzle, small ears and dark eyes and its trade-mark \"monkey like\" expression is exaggerated by its protruding lower lip. Their tails are relatively short. Historically, the tail of the Affenpinscher would have been docked, and ancestors of the breed today were found in variety of colours including red, fawn and beige and would have been larger in size.\nAffenpinscher Behaviour and Temperament\nDespite its distinctive Terrier-like appearance, the Affenpinscher is different from other Terriers, as they are actually part of the pinscher-schnauzer subgroup. These characteristics mean that not only is the Affenpinscher small, active and loyal but they also often get along well with other Dogs and pets. Some of the most distinctive traits of the Affenpinscher are that they are active, adventurous, curious, and stubborn, but they are also fun-loving and playful. The breed is confident, lively and affectionate towards family members, but their loyalty towards them also makes them very protective of them. Affenpinschers can be somewhat territorial when it comes to their toys and food, so they are not recommended for households with very small children. This Dog is generally quiet but can become very agitated if it feels under threat, showing no fear toward any aggressor.\nAffenpinscher Breeding\nThe Affenpinscher breed that we know today was first bred in Germany in the late 17th century as a household ratter. These Dogs would have been at least 30cm tall (some believe them to be ever larger) making them significantly bigger than the Dog of today. Inter-breeding with other domestic breeds during the early 1900s gave rise to the smaller sized and flatter-faced Affenpinscher that was imported into America a number of decades later. Despite there being a number of this breed in the USA, the Affenpinscher has never really become a popular Dog choice in Britain, with their being less than 30 breeders in the country today. On average, Affenpinschers produce only a few puppies per litter, which are blind when first born.\nAffenpinscher Interesting Facts and Features\nThe Affenpinscher was first named in 17th century Germany as Zwergaffenpinscher which literally translated means little-monkey-dog, due to its curious Monkey-like expression. However, when Affenpinscher numbers were in demise during the war, the Dog was bred with other small breeds including the Brussels Griffon, leading to the desired breed of today. Curiously, the Affenpinscher had been used years before in the creation of the Brussels Griffon, which when re-bred with the Affenpinscher, led to a shorter muzzle and more prominent chin. As with nearly every breed of domestic Dog, there a number of health problems associated with the Affenpinscher. The most common ailments are caused by such an inquisitive and active nature, often leading to a number of cuts and bumps along with broken bones.\n&nbsp;"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+ [5] "is thought to be one of the oldest of all domestic Dog breeds, with the first records of the Afghan Hound dating back to 4,000 BC. The fast and agile nature of this Dog meant that they made excellent hunters of small game in their native Afghanistan, most commonly hunting Deer, Goats, Gazelle and Wild Boar along with seeing off larger predators such as Wolves and Snow Leopards. Their gentle nature also made this elegant sight-hound a doting shepherd, fearlessly protecting livestock from hungry predators. This beautiful but gently natured watchdog was brought to Britain in the early 1920s and its entry to the USA followed in 1926. The elegance of the Afghan Hound meant that they quickly became highly desirable Dogs, both as pets and for show.\nAfghan Hound Physical Characteristics\nThe most characteristic feature of this breed is the long, silky fur that covers the Afghan Hound's body, most notably on the top of its head. Afghan Hounds are most commonly black or golden in colour although a number of colour variations now exist within the breed including brown, grey and white. The elongated head and muzzle of the Afghan Hound make them easily identifiable, along with their high hip-bones which gave the ancestors of the modern day Afghan Hound their reputation for speed and agility. The face of the Afghan Hound is usually a black-coloured mask, with a black nose and dark almond shaped eyes. The colour of the facial mask is known to vary although white is said to be discouraged as it is seen as a sign of poor breeding. They are fairly large Dogs standing on average at 68cm in height.\nAfghan Hound Behaviour and Temperament\nThe temperament of the typical Afghan Hound tends to be aloof and dignified, but happy and intelligent and generally relatively playful. However, the Afghan Hound has a reputation among Dog trainers for having a relatively slow obedience intelligence possibly due to their slightly stubborn nature. The Afghan Hound has a leaning towards independence and owners should not be surprised if their Dog sometimes chooses to ignore commands. The modern day Afghan Hound is said to have many Cat-like tendencies, loving to laze around the house and is generally much slower than its Middle Eastern ancestors. The Afghan Hound is seldom used for hunting in Europe and America today where they are one of the most popular domestic Dog breeds.\nAfghan Hound Breeding\nThe Afghan Hound was first bred in the ancient deserts of Egypt and Afghanistan, where they were primarily used as hunters. The Afghan Hound was a favoured choice of Dog as they were able to outrun the majority of other animals, whilst being courageous hunters and were capable of thinking independently, often able to keep larger prey from escaping until the hunter arrived. The first domestic breeding of the modern day Afghan Hound was by an English officer station near Kabul, who later brought the Afghan Hound to the UK in 1925. A year later, the Afghan Hound was taken to America where its beauty and elegance made it one of the most prestigious breeds of domestic Dog in the States.The average litter size of the Afghan Hound is around 7 puppies, which are blind when first born.\nAfghan Hound Interesting Facts and Features\nWhen the Afghan Hound breed was first brought to America, its naturally independent nature led to it gaining a reputation for being untrustworthy. Today however, many of these traits are not quite as prominent in the breed as they once were. The high hip-bones of this Dog are thought to be one of the main reasons why the Afghan Hound once had a reputation for speed, making them faster at running than most other domestic Dog breeds today. The long topknot on the top of its head, along with the small ring near the end of its tail, are two of the most distinctive features of the mature Afghan Hound. They originate from the mountains of Afghanistan and their unique appearance provides these Dogs with vital advantages during the cold winters and hot summers. Although beautiful, this long fur takes daily care and maintenance to ensure that the coat remains healthy.\n&nbsp;"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+ [6] "Elephant is the largest of all living creatures on land today, with some individuals growing to weigh more than 6 tonnes. The Elephant is thought to have been named after the Greek word for ivory, meaning that Elephants were named for their uniquely long tusks. Although many of the ancestors of the African Bush Elephant became extinct during the last ice-age (including the Woolly Mammoth), there are three distinct species of Elephant remaining today which are the Asian Elephant (of which there are a number of sub-species), the African Bush Elephant and the African Forest Elephant. Although these two Elephant species are very similar, the African Bush Elephant is considered to be generally larger than the African Forest Elephant, which has rounder ears and straighter tusks.\nAfrican Bush Elephant Anatomy and Appearance\nThe African Bush Elephant is the largest known land mammal on Earth, with male African Bush Elephants reaching up to 3.5 metres in height and the females being slightly smaller at around 3 metres tall. The body of the African Bush Elephants can also grow to between 6 and 7 meters long. The tusks of an African Bush Elephant can be nearly 2.5 meters in length and generally weigh between 50 and 100 pounds, which is about the same as a small adult Human. African Bush Elephants have four molar teeth each weighing about 5.0 kg and measuring about 12 inches long. As the front pair of molars in the mouth of the African Bush Elephant wear down and drop out in pieces, the back pair shift forward and two new molars emerge in the back of the African Bush Elephant's mouth. African Bush Elephants replace their teeth six times during their lives but when the African Bush Elephant is between 40 to 60 years old, it no longer has teeth and will likely die of starvation, which is sadly a common cause of death of Elephants in the African wilderness.\nAfrican Bush Elephant Distribution and Habitat\nAlthough the historical range of its ancestors ranged right into the Arctic Circle, today the African Bush Elephant is mainly found in central and southern Africa in nomadic herds that wander the plains and grasslands of Africa grazing for food and searching for waterholes. Unlike the slightly smaller African Forest Elephant, the African Bush Elephant inhabits the grassy savanna plains and shrub-land of the African continent in groups that contain mothers and their calves. Generally, African Bush Elephant herds contain&nbsp;around 10 individuals but it is not uncommon for family groups to join together, forming a clan which can contain&nbsp;over 1,000 Elephants. This very social lifestyle means that the African Bush Elephants are less vulnerable on the open African plains.\nAfrican Bush Elephant Behaviour and Lifestyle\nNot only is the African Bush Elephant an incredibly sociable mammal but it is also a very active one. African Bush Elephants are nomadic animals meaning that they are constantly on the move in search of food, so moving within these family herds allows them to have greater protection both from predators and from the elements. The trunk of the African Bush Elephant is one of its most distinguishing features and this extra long nose is not only flexible enough to gather and handle food but can also collect water. Its trunk, along with its tusks can also be used to defend itself from predators such as Lions, and to fight with other male African Bush Elephants during the mating season. African Bush Elephants are also considered to be highly intelligent and emotional animals displaying behaviours that include giving and receiving love, caring deeply for the young and grieving for dead relatives.\nAfrican Bush Elephant Reproduction and Life Cycles\nAfrican Bush Elephants tend to live relatively long lives, with the average life span being between 60 and 70 years, Female African Bush Elephants reach sexual maturity (are able to reproduce) after 10 or 11 years, but are thought to be most fertile between the ages of 25 and 45. Male African Bush Elephants however, often don't reach sexual maturity until they are nearly 20 years old. After mating and a gestation period of up to 2 years, the female African Bush Elephant gives birth to a single calf (twins have been known but are extremely rare). The African Bush Elephant calf is nursed for 2 years but will remain under the guidance and protection of the herd until it is old enough to support itself (around 6 years old). It is at this point that the tusks of the African Bush Elephant calf will be starting to grow.\nAfrican Bush Elephant Diet and Prey\nDespite its immense size, the African Bush Elephant is a herbivorous mammal meaning that it survives on a diet that solely consists of plants and plant matter. The bulk of the African Bush Elephant's diet is comprised of leaves and branches that are stripped off the trees and bushes using its trunk. The African Bush Elephant also grazes on fruits and grasses and uses its immense tusks for digging for roots in the ground and to strip the bark of trees. Food is fed into its mouth using the trunk, and the large, flat teeth of the African Bush Elephant are then the perfect tool for grinding the vegetation and course plants down so that they can then be more easily digested.\nAfrican Bush Elephant Predators and Threats\nThe African Bush Elephant has no real natural predators to threaten its survival, mainly due to its sheer size and the fact that African Bush Elephants often remain within the safety of the herd. African Bush Elephants are Africa's peaceful giants and can be seen co-inhabiting the African wilderness with other large mammals and birds, without problem. In the animal world, Lions and Hyenas may occasionally be able to pick off a young African Bush Elephant that has been separated from its mother and have also been known to attack adults that are old and sick and therefore more vulnerable. Humans that poach the African Bush Elephants for their ivory tusks are the biggest threat to their survival along with habitat loss across the continent.\nAfrican Bush Elephant Interesting Facts and Features\nIn the early 19th century, the story of the African Bush Elephant was very different with their being up to 5 million individuals thought to have been roaming the African continent. However, due to the increased demand for ivory, Africa's Bush Elephant population is thought to have fallen as much as 85% in some areas. The large ears of the African Bush Elephant are said by some to be shaped somewhat like Africa, but these large flaps of skin are not just for hearing, they are a vital tool in keeping the Elephant cool in the African heat. Like many of the herbivores found throughout Africa, the calves can walk at birth to maximise their chances of survival. An adult African Bush Elephant can drink up to 50 gallons of water every day, and is able to take 1.5 gallons of water into their trunks at a time.\nAfrican Bush Elephant Relationship with Humans\nSadly, due to an increase of outside interest in Africa and its exotic wonders (particularly towards the mid 20th century), the African Bush Elephant population took a devastating decline towards extinction. After having been brutally killed by poachers for years for their ivory, African Bush Elephants had vanished from much of their native habitat. In 1989 a worldwide elephant ivory hunting ban fell into place, after the populations had dropped so dramatically across the continent. In northern and central parts of Africa, the African Bush Elephant is now rare and confined to protected areas, and although the story is similar in the south, South African Elephant populations are thought to be doing better with an estimated 300,000 individuals in the region.\nAfrican Bush Elephant Conservation Status and Life Today\nToday, although recovering, African Bush Elephant populations are still threatened from increasing levels of illegal poaching and habitat destruction. Deforestation in the African Bush Elephant's territory means that the African Bush Elephants lose both their food and shelter making them more vulnerable in the wild. Despite the ban, African Bush Elephants are also constantly threatened by poachers hunting the elephants for their ivory tusks.\n&nbsp;"
+ [7] "is a large species of Civet found across sub-Saharan Africa. The African Civet is the only remaining member in its genetic group and is considered to be the largest Civet-like animal on the African continent. Despite their cat-like appearance and behaviours, the African Civets are not felines at all but are in fact, more closely related to other small carnivores including Weasels and Mongooses. The African Civet is most well known for the musk that it secretes to mark its territory (called Civetone), which has been used in the manufacturing of perfumes for centuries, and its striking black and white markings, make the African Civet one of the easiest Civet species to identify.\nAfrican Civet Anatomy and Appearance\nOne of the African Civet's most distinctive features are the black and white markings on their fur and grey face, which along with the black band around their eyes, gives these animals a Raccoon-like appearance. The similarity is only heightened by the fact that the African Civet's hind legs are quite a bit longer than the front legs, making its stance very different to that of a Mongoose. The average adult African Civet has a body length of around 70cm with nearly the same length tail on top of that. The paws of the African Civet each have five digits with non-retractable claws to enable the Civet to move about in the trees more easily.\nAfrican Civet Distribution and Habitat\nThe African Civet is found in a variety of habitats on the African continent, with its range extending from coast to coast in sub-Saharan Africa. African Civets are most commonly found in tropical forests and jungles and areas where there is plenty of dense vegetation to provide both cover and animals that the African Civets feeds on. African Civets are never found in arid regions and always must be in an area which has a good water source. Despite this though, it is not uncommon for African Civets to be found along rivers that lead into the more arid regions. They are capable swimmers and often spend their time hunting and resting in the trees as well as on the ground.\nAfrican Civet Behaviour and Lifestyle\nThe African Civet is a solitary animal that only comes out under the cover of night to hunt and catch food. These nocturnal animals are primarily tree-dwelling creatures that spend most of the daylight hours resting in the safety of the trees high above. African Civets tend to be most active just after sunset but tend to hunt in areas that still provide plenty of cover. Despite being generally very solitary creatures, the African Civet has been known to gather in groups of up to 15 members particularly during the mating season. They are also highly territorial animals, marking their boundaries with the scent released by their perineal glands.\nAfrican Civet Reproduction and Life Cycles\nThe only time when African Civets seem to be seen together is when they are mating. The female African Civet usually gives birth to up to 4 young after a gestation period that lasts for a couple of months. The female African Civet nests in an underground burrow that has been dug by another animal in order to safely raise her young. Unlike many of their carnivorous relatives, Civet babies are usually born quite mobile and with their fur. The babies are nursed by their mother until they are strong enough to fend for themselves. African Civets can live for up to 20 years, although many rarely get to be this old.\nAfrican Civet Diet and Prey\nDespite the fact that the African Civet is a carnivorous mammal, it has a very varied diet that consists of both animal and plant matter. Small animals such as Rodents, Lizards, Snakes and Frogs make up the majority of the African Civet's diet, along with Insects, berries and fallen fruits that it finds on the forest floor. The African Civet predominantly uses its teeth and mouth to gather food instead of using its paws. This method of eating means that the African Civet can use its 40 sharp teeth effectively to break its catch down, and the strong jaw of the African Civet makes it harder for its meal to try and escape.\nAfrican Civet Predators and Threats\nDespite being a secretive yet a relatively ferocious predator, the African Civet is actually preyed upon by a number of other predators within their natural environment. Large predatory Cats are the most common predators of the African Civet including Lions and Leopards along with reptiles such as large Snakes and Crocodiles. African Civet populations are also under threat from both habitat loss and deforestation, and have been subject to trophy hunters in the past, across the continent. One of the biggest threats to the African Civet is the want for their musk.\nAfrican Civet Interesting Facts and Features\nThe musk secreted by the glands close to the African Civet's reproductive organs has been collected by Humans for hundreds of years. In its concentrated form, the smell is said to be quite offensive to people, but much more pleasant once diluted. It was this scent that became one of the ingredients in some of the most expensive perfumes in the world (and made the African Civet a well-known African animal). African Civets are known to carry the rabies disease, which is contracted through contact with an already infected animal. The African Civet is also known to use designated areas around its territory, where it is able to go to the toilet.\nAfrican Civet Relationship with Humans\nEach African Civet secretes up to 4g of musk every week, which is normally collected from African Civets in the wild. However, the capturing and keeping of African Civets for their musk is not unknown and is said to be an incredibly cruel industry. Today, few perfumes still contain actual musk from the glands of an African Civet as many scents today are easily reproduced artificially. Although it is a protected yet not an endangered animal, the African Civet populations have also been severely affected by Human hunters, who hunt these little carnivores to simply add their skin to the trophy cabinet.\nAfrican Civet Conservation Status and Life Today\nToday, the African Civet is under threat from deforestation and therefore drastic loss of much of its natural habitat. The main reason for such extensive deforestation in the area is either for logging or to clear the land to make way for palm oil plantations. The African Civet is listed as being Least Concern, which means that there is little threat at the moment that the African Civet will become extinct in the near future.\n&nbsp;"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+ [8] "Frog is a large species of flat Frog that is primarily found dwelling at the bottom of lakes and rivers. The African Clawed Frog is also known as the Platanna and has a number of very unique features that mean it is specially adapted to its habitat. The African Clawed Frog is thought to have originated in South Africa, and is today found naturally across the African continent. The African Clawed Frog has also been introduced to the Americas and parts of Europe.\nAfrican Clawed Frog Anatomy and Appearance\nThe average adult African Clawed Frog grows to about 12 cm in length, and weighs around 200g. The African Clawed Frog is often a greenish, grey colour although other colours of the African Clawed Frog are not uncommon (such as albino). The colour of the African Clawed Frog's skin, along with its mottled pattern, gives it more camouflage from hungry predators. They have a line of stitch-marks along either side of their bodies which act as sense organs to detect prey in the surrounding water. Their eyes and nose are located on top of the head enabling them to see and breathe but without being too visible.\nAfrican Clawed Frog Distribution and Habitat\nThe African Clawed Frog is most commonly found in eastern and southern Africa, along the African Rift Valley where they prefer stagnant waters to fast-flowing streams. African Clawed Frogs are bottom-dwelling animals and will only leave the safety of the water if they are forced to migrate. They inhabit warm shallow creeks and rivers during the summer and move into the flooded forests during the rainy season. Due to introduction by Humans, the African Clawed Frog can now be found in numerous freshwater habitats outside of Africa where they can be a very invasive species.\nAfrican Clawed Frog Behaviour and Lifestyle\nThe African Clawed Frog spends its whole life in water, except for poking its head up to the surface from time to time to breathe. The African Clawed Frog can swim at astonishing speeds sideways, backwards, forwards, up and down, and in all other directions. It is a ferocious predator and once food has been spotted, the African Clawed Frog then catches its prey using its claws, which shovel it into the African Clawed Frog's mouth. The African Clawed Frog has evolved very successfully as a bottom-dwelling animal, which means that it has greater protection from predators and a better choice of food.\nAfrican Clawed Frog Reproduction and Life Cycles\nFemale African Clawed Frogs are often nearly double the size of the males, and are able to reproduce more than once a year. After mating, the female African Clawed Frog can lay thousands of eggs at a time on an underwater object, which are held together in the water by a jelly-like substance. After hatching, the African Clawed Frog tadpoles begin their life in the water until they grow legs and are able to venture out onto the river banks if need be. The African Clawed Frog is known to have a long lifespan for small aquatic animals, and can live to around 5 to 15 years in the wild. Some adult African Clawed Frogs have been recorded to live to nearly 30 years old in captivity.\nAfrican Clawed Frog Diet and Prey\nThe African Clawed Frog is a carnivorous animal and an apex predator within its underwater environment. The African Clawed Frog's main food is Water Bugs and small Fish but the African Clawed Frog is also known to eat its own skin whenever it is shed. African Clawed Frogs also hunt other small invertebrates such as Insects, Spiders and Worms, which it scoops into its mouth using its clawed front feet. African Clawed Frogs in captivity have a much less varied diet which primarily consists of Worms.\nAfrican Clawed Frog Predators and Threats\nDue to its small size, the African Clawed Frog has a number of natural predators within its native environment, that occur both in and out of the water. Small mammals including Rodents, Cats and Dogs, and numerous Birds and Reptiles, all prey on the African Clawed Frog, but herons are their most common threat. By living on the muddy bottoms of lakes and rivers, the African Clawed Frog can remain safely hidden for much of the time, and only its eyes and nose appear above the water-line when it surfaces. Although not as vulnerable as many other amphibians, the African Clawed Frog is also being threatened by water pollution.\nAfrican Clawed Frog Interesting Facts and Features\nThe African Clawed Frog is named for their unique feet, as their hind feet are webbed but their front legs have clawed toes instead, which are used to help shovel food into their mouths. In the 1940s the African Clawed Frog became the world's first pregnancy test for Humans, which although barbaric, has led to them being found worldwide today. The African Clawed Frog has also been a popular test subject for scientific research for in general. They are known to be highly aggressive animals and particularly ferocious amphibians.\nAfrican Clawed Frog Relationship with Humans\nOver the years, Humans have managed to find a number of uses for the African Clawed Frog in our day to day lives. The most notable (and probably cruellest) of these practises was the use of the African Clawed Frog females as a type of pregnancy test. The hormone produced by Human babies (passed on through the mother's urine) known as HCG, induces ovulation in the female African Clawed Frog. Humans also use them in laboratories worldwide for research and teaching. Habitat loss and water pollution caused by people nearby is also having a drastic effect on African Clawed Frog populations.\nAfrican Clawed Frog Conservation Status and Life Today\nAlthough the African Clawed Frog has been classified as being at Least Concern from imminent extinction, population numbers have fallen in certain areas due to deteriorating water quality. Elsewhere, African Clawed Frog populations around the world have often become non-native pests to the local plants and wildlife.\n&nbsp;"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ [9] "Elephant is one of two Elephant subspecies found on the African continent. Although the African Forest Elephant is slightly smaller than the African Bush Elephant, it is still one of the largest animals found on land today. Although these two Elephant species are very similar, the African Forest Elephant is thought to have rounder ears and straighter tusks than the African Bush Elephant, and it has been also noted that the African Bush Elephant and the African Forest Elephant have a different number of toe nails. Until recently though, they were considered to be the same species.\nAfrican Forest Elephant Anatomy and Appearance\nThe African Forest Elephant is the one of the largest known land mammals on Earth, with male African Forest Elephants reaching nearly 3 metres in height and the female African Forest Elephants around 2.5 metres. The tusks of an African Forest Elephant can grow to nearly 1.5 meters long and generally weigh between 50 and 100 pounds, which is about the same as a small adult Human. They are thinner, straighter and shorter than the tusks of the African Bush Elephant. African Forest Elephants have four molar teeth each weighing about 5.0 kg and measuring about 12 inches long. They have large rounded ears which are used both for hearing and to keep them cool.\nAfrican Forest Elephant Distribution and Habitat\nThe African Forest Elephant mainly lives in central and southern Africa in nomadic herds that wander through the forests and grasslands of Africa grazing for food and searching for waterholes. They are most commonly founds in the tropical dense jungles, where their smaller size allows them to move through the thick vegetation more easily than the larger African Bush Elephant. African Forest Elephants are threatened throughout much of their natural habitat today mainly due to deforestation and climate change and have been pushed into smaller and smaller pockets of their native lands.\nAfrican Forest Elephant Behaviour and Lifestyle\nThe African Forest Elephant mainly uses its immense tusks for digging for roots in the ground and to strip the bark off trees. The African Forest Elephant also uses its tusks to defend itself from predators such as Lions, and to fight with other male African Forest Elephants during the mating season. Males are generally fairly solitary but females and their young form small family groups known as herds. This allows the more vulnerable offspring to be more easily protected. African Forest Elephants communicate through a series of low-frequency calls which they are able to detect from a few kilometres away.\nAfrican Forest Elephant Reproduction and Life Cycles\nFemale African Forest Elephants reach sexual maturity (are able to reproduce) after 10 or 11 years, and male African Forest Elephants often don't reach sexual maturity until they are nearly 20 years old. After a gestation period of up to 2 years, the female African Forest Elephant gives birth to a single calf (twins have been known but are extremely rare). The African Forest Elephant calf is nursed for 2 years and will remain with the herd until it is old enough to support itself. It is at this point that the tusks of the African Forest Elephant calf will be starting to grow.\nAfrican Forest Elephant Diet and Prey\nThe African Forest Elephant is a herbivorous animal meaning that it only eats plants and other vegetation. They predominantly eat leaves and fruit from trees, herbs and low-lying shrubs. However, the front pair of molars in the mouth of the African Forest Elephant wear down and drop out in pieces, making the back pair shift forward and two new molars emerge in the back of the African Forest Elephant's mouth. African Forest Elephants replace their teeth six times during their lives but when the African Forest Elephant is about 40 to 60 years old, the African Forest Elephant no longer has teeth and will likely die of starvation, which is sadly a common cause of death in the African wilderness.\nAfrican Forest Elephant Predators and Threats\nThe African Forest Elephant has no real natural predators to threaten its survival, mainly due to the African forest elephant's sheer size. However, it is not uncommon for large carnivores such as Lions and Hyenas to pick out a calf that has strayed from the herd or an adult that is more vulnerable from ill health or old age. African Forest Elephants are fairly docile animals and can be seen co-inhabiting in the African wilderness with other large mammals and birds, relatively peacefully. Deforestation and therefore loss of its natural habitat is one of the biggest threats to the African Forest Elephant, along with poaching.\nAfrican Forest Elephant Interesting Facts and Features\nThe tusks of the African Forest Elephant are pretty straight instead of curved to help them move through the thick jungle with greater ease. This, along with their pinkish tinge, has made the ivory of the African Forest Elephant's tusks in high demand on the black market. Despite African Forest Elephants being able to communicate with one another through a couple of miles of dense jungle, the sound they make is so low that it cannot be heard by Humans. They are an essential tool in the spreading of seeds throughout Africa's forests and are therefore vital to the running of their native eco-systems.\nAfrican Forest Elephant Relationship with Humans\nSadly, due to an increase of outside interest in Africa and its exotic wonders, the African Forest Elephant population took a devastating decline towards extinction. In 1989 a worldwide Elephant ivory hunting ban fell into place, meaning that the African Forest Elephant population has fortunately begun to recover. In 1980, there were an estimated 380,000 African Forest Elephants but due to growing Human populations in their native countries, numbers have fallen to 200,000. Deforestation of their habitats and the illegal poaching of the African Forest Elephant for their ivory are also to blame for their recent demise.\nAfrican Forest Elephant Conservation Status and Life Today\nToday, although slightly recovering in certain areas, African Forest Elephant populations are still threatened from increasing levels of illegal poaching and habitat destruction. Deforestation in the African Forest Elephant's territory means that the African Forest Elephants lose both their food and shelter making them more vulnerable in the wild. African Forest Elephants are also constantly threatened by poachers hunting the Elephants for their ivory tusks. They are now listed as an Endangered species."                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+[10] "Civet (also commonly known as the Two-Spotted Palm Civet) is a species of Civet natively found in the tropical jungles of eastern and central Africa. Unlike the other Civet species which are all very closely related to one another, the African Palm Civet is in a genetic group of its own, making it the most distinctive among the Civet species. The African Palm Civet is widespread throughout a number of habitats with an abundance in numbers in certain areas. The African Palm Civet is a great opportunist and is thought to be the most common forest-dwelling small carnivore in all of Africa.\nAfrican Palm Civet Anatomy and Appearance\nDespite their Cat-like appearance and behaviours, the African Palm Civet is not a feline at all but are in fact more closely related to other small carnivores including Genets, Weasels and Mongooses. One of the African Palm Civets most distinctive features are their brown to light-tan to yellow coloured thick fur, which is mottled with a series of darker brown spots. The fur is darker on the top half of its body and allows the civet to be more easily camouflaged amongst the trees. The muzzle of the African Palm Civet is sharply pointed as with other Civet species, and it has strong and muscular yet relatively short limbs. They have small, rounded ears and yellow-green eyes with slit shaped pupils.\nAfrican Palm Civet Distribution and Habitat\nThe African Palm Civet is found inhabiting the tropical jungles and forest across much of eastern African and is even found parts of central and western Africa, where its native habitats still exist. Today its range extends from southern Sudan to Guinea, throughout Angola and into eastern Zimbabwe. African Palm Civets have proved to be extremely adaptable animals and are found in a wide variety of habitats from deciduous forests and lowland rainforests, to river and savanna woodlands. The African Palm Civet however is being threatened in much of its natural range due to deforestation causing destruction to or total loss of many of their historical regions.\nAfrican Palm Civet Behaviour and Lifestyle\nThe African Palm Civet is a solitary animal that leads a crepuscular lifestyle, meaning that it only emerges for a few hours at dawn and dusk in order to hunt for food. They are primarily tree-dwelling creatures that spend most of the day and night hours resting in the safety and shelter of the trees. Despite being generally very solitary creatures, the African Palm Civet has been known to gather in groups of up to 15 members when food is in abundance. African Palm Civets have two sets of scent glands that secret strong-smelling substances. Found between the third and forth toes on each foot, and on the lower part of their abdomen, these glandular secretions are primarily for marking territories and are involved in mating.\nAfrican Palm Civet Reproduction and Life Cycles\nAfrican Palm Civets are able to breed twice a year in May and October during the rainy seasons, when there is more food available. The female African Palm Civet usually gives birth to up to 4 young after a gestation period that lasts for a couple of months. The babies are weaned by their mother until they are strong enough to fend for themselves when they are usually around 60 days old. The female's mammary glands produce a orange-yellow liquid which stains both her tummy and the babies fur the same colour. This is thought to discourage males that are either looking for a mate or who want to harm her young. African Palm Civets can live for up to 15 years, although few rarely get to be this old in the wild.\nAfrican Palm Civet Diet and Prey\nThe African Palm Civet is an omnivorous animal, and like other species of Civet, it survives on a diet comprised of both plants and other animals. Despite this, pineapples and other fruits make up the majority of its diet. Small animals such as Rodents, Lizards, Birds and Frogs are also hunted by the African Palm Civet, along with insects. African Palm Civets feed by holding their prey in their hands and bite it powerfully a number of times to kill it, before then swallowing it whole. The long, sturdy tail is thought to be used as a brace when the Civet is balancing only on its hind legs, and along with the thick-skinned pads on the bottom of its feet, stabilises the African Palm Civet on the branch while its eating.\nAfrican Palm Civet Predators and Threats\nDespite being a secretive yet relatively ferocious predator, the African Palm Civet is actually preyed upon by a number of predators within their natural environment. Although they do spend most of their lives in the trees, African Palm Civets come down to the ground to look for food fairly often, and will even venture outside of the forest if prey is in short supply. Large predatory Cats are the most common predators of the African Palm Civet including Lions, and Leopards that are able to hunt the Civet in the trees. Reptiles such as large Snakes and Crocodiles also hunt the African Palm Civet if given the chance. One of the biggest threats to the African Palm Civet today though is the loss of much of its natural habitat, mainly due to deforestation.\nAfrican Palm Civet Interesting Facts and Features\nThe musk secreted by the glands close to the African Palm Civet's reproductive organs has been collected by Humans for hundreds of years. In its concentrated form, the smell is said to be quite offensive to people, but much more pleasant once diluted. It was this scent that became one of the ingredients in some of the most expensive perfumes in the world. African Palm Civet females are known to produce milk from the exact number of teats as they have young, to ensure that each of their offspring has enough milk to drink and individuals are not so easily excluded during feeding time. Although it is not so common today, African Palm Civets were once commonly hunted as bushmeat in certain parts of the continent.\nAfrican Palm Civet Relationship with Humans\nFarmers that live in the native habitats of the African Palm Civet view these animals very much as pests, as they are commonly known to raid poultry coops in order to get an easy meal. They are extremely persistent and abundant carnivores, which added to their secretiveness, has meant that they have caused great damage to livestock numbers in the past. Humans though have been a bigger threat to the African Palm Civet for years as they were hunted and trapped for their meat, scent and thick fur coat which is used to make traditional ceremonial garments. The destruction of the African Palm Civet's natural environment by people is thought to be the biggest threat to the species today.\nAfrican Palm Civet Conservation Status and Life Today\nThe African Palm Civet has been listed as an animal that is at lower risk and therefore of Least Concern of becoming extinct in the wild in the immediate future. They are known to be widely distributed, found in a variety of habitats and population numbers are also in abundance in certain areas. Today, the African Palm Civet is under threat from deforestation and has been subjected to the drastic loss of much of its natural habitat. The main reason for such extensive deforestation in these areas is either for logging or to clear the land to make way for palm oil plantations.\n&nbsp;"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+[11] "is a small to medium sized Penguin species that is found along the coast of South Africa and on a number of its surrounding islands. The African Penguin is thought to be most closely related to the Humboldt and Magellanic Penguins found in southern South America, and the Galapagos Penguin found in the Pacific Ocean near the Equator. The African Penguin was named for the fact that it is the only species of Penguin that is found breeding on the African Coast, and it is believed to be one of the first Penguin species to be discovered by humans.\nAfrican Penguin Anatomy and Appearance\nThe African Penguin is a fairly distinctive species of penguin with clean black and white markings and a sharply pointed black beak. The African Penguin also has black feet and a number of dot-like markings flecked across its white chest which are said to be as unique to the individual Penguin as a Human finger print is, along with a narrow black band. The male African Penguin is generally slightly larger than their female counterparts but both are fairly similar in appearance. One of the African Penguin's most distinctive features is that they have pink glands above their eyes which help them to cope with the temperate climates. The hotter the African Penguin gets, the more blood is sent to these glands so it may be cooled by the surrounding air, which in turn, makes these glands more pink.\nAfrican Penguin Distribution and Habitat\nThe African Penguin is found on the south-western coast of Africa, living in 27 colonies on 24 islands between Namibia and Algoa Bay, near Port Elizabeth, South Africa, with the largest colony found on Dyer Island, near Kleinbaai. African Penguins are most densely distributed around the cold, nutrient rich waters of the Benguela Current where there is a plentiful supply of food. Although they spend much of their time at sea, African Penguins gather in nesting sites on rocky islands where they spend their days in sheltered burrows to avoid the hot sun. They are one of the only Penguin species to be found in non-freezing conditions and cope with this by burrowing, emerging at dusk and dawn, and using the pink glands above their eyes to cool the blood down.\nAfrican Penguin Behaviour and Lifestyle\nLike many other Penguin species, African Penguins are incredibly sociable birds, with adults forming pair bonds that last for life (as long as 10 years). African Penguins can often be seen grooming one another, which is not only practical for cleaning purposes, but also for removing parasites and even just rearranging feathers, constantly strengthening the social bond between the pair. Their courtship displays are often very noisy as the male and female Penguin call to each other using a series of donkey-like sounds. African Penguins are also known to submit to a spot of bathing only a few meters from the shore, which they are thought to do quite regularly to both clean and to cool themselves down in the heat.\nAfrican Penguin Reproduction and Life Cycles\nAfrican Penguins begin to breed at the average age of four, when a male and female will pair up, and tend to breed together for the rest of their lives. The female African Penguin either digs herself a burrow or finds a dip beneath a rock or bush, in which she lays two eggs. The eggs are incubated by both parents for up to 40 days, when only one of the eggs will usually hatch. The African Penguin chicks are fed and kept warm by their parents constantly until they are a month old when they begin to be left on their own, forming crèches with other chicks for protection from predators. They tend to remain with their parents until they are between 3 and 5 months old, when they will leave the colony (this is dependant though on the supply and quality of food in the area). The chicks return to the colony after a couple of years to moult into their adult plumage. African Penguins generally live for between 10 and 15 years.\nAfrican Penguin Diet and Prey\nThe African Penguin is a carnivorous animal that, like all other Penguin species, survives on a diet that is only comprised of marine organisms. Shoaling fish including Anchovies, Sardines, Horse Mackerel and Round Herrings make up the bulk of the African Penguin's diet, along with the occasional Squid or Crustacean when normal food is in short supply. The streamlined body of the African Penguin allows it to move through the water like a rocket, capable of reaching a top speed of around 20 kph when hunting for food. African Penguins catch their prey by diving into the ocean depths for around 2 minutes at a time. Although they normally go to depths of around 30 meters, it is not uncommon for them to be found hunting more than 100 meters beneath the water's surface.\nAfrican Penguin Predators and Threats\nThe African Penguin's smaller size means that it has many predators both in the water and also on dry land. Their marine predators are primarily Sharks and Cape Fur Seals, but the biggest threat to them on land is not just to the adult Penguins, but more the vulnerable eggs and chicks. Kelp Gulls and Scared Ibises prey on them from the air and Mongooses, Snakes, and Leopards have been observed hunting them on ground. The African Penguin has also been severely affected by Human activity in their native regions, with populations thought to have taken a drastic decline, mainly due to the exploitation of their eggs for food when they were first discovered. They are also severely affected by the disruption of their natural habitats.\nAfrican Penguin Interesting Facts and Features\nPenguins have more feathers than any other bird, which act as a waterproof layer keeping their skin dry. African Penguins moult once a year which they do back in their colonies. The whole process lasts for about 20 days, in which time, the African Penguins cannot swim or eat, and can lose almost half of their body weight. African Penguins are known to spend long periods of time fishing out at sea, and depending on the area, can travel between 30 and 110 km in one trip. However, those African Penguins who have chicks to feed, will rarely go that far, catching food closer to the shore, and as quickly as possible. The African Penguin is also known as the Jackass penguin, due to the donkey-like call that they make during their courtship rituals.\nAfrican Penguin Relationship with Humans\nIt is widely believed that African Penguins were one of the first Penguin species to come into contact with Humans, due to the fact that they are found on the temperate South African coast rather than in the heart of Antarctica. This however, does not seem to have worked to the bird's advantage as their eggs were stolen for food (slowing the rate of reproduction), and the guano used in nest building was harvested for fertiliser. Today, other threats face the African Penguin including competition for food from commercial fishing and oil pollution in the water. Only a small handful of nesting sites can be accessed by tourists, but the Penguin's nervous nature of people means that these areas have to be strictly monitored.\nAfrican Penguin Conservation Status and Life Today\nToday, the African Penguin is considered to be a vulnerable animal and has been listed as being Endangered by the IUCN. It is thought that today's African Penguin population of around 70,000 breeding pairs, is less than 10% of the population that existed in 1900. By the 1950s, the African Penguin population had halved, and it had then halved again by 1980. There is an approximate 2% decline in the African Penguin population every year, mainly due to the Human consumption of their eggs, competition for food and habitat disruption."                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+[12] "Toad is a small species of Toad found in the forests of Central Africa. Today, little is still known about this tiny amphibian and the constantly decreasing population numbers of the African Tree Toad are making it increasingly difficult for us to learn more about them. There are two known subspecies of the African Tree Toad, which are the African Tree Toad and the Bates' Tree Toad. Both African Tree Toad species are of similar size and colour but tend to differ in the geographical regions they inhabit.\nAfrican Tree Toad Anatomy and Appearance\nThe African Tree Toad is generally dark to light brown in colour, with white patches on its belly and like other Toad species, the African Tree Toad has specially designed feet which aid its semi-aquatic and tree climbing lifestyle. The African Tree Toad is a terrestrial animal and uses it' s toes to also help it to hop about on the ground. The toes of the African Tree Toad are long and thin, with sticky, round discs on the tips. These widely spread digits enable this Toad to grip onto a larger surface area. The tiny striped body of the African Tree Toad grows up 3.8cm in length making these animals particularly hard to spot amongst the debris on the forest floor.\nAfrican Tree Toad Distribution and Habitat\nThe African Tree Toad is said to be distributed across its natural Central African range in countries such as Cameroon, Democratic Republic of the Congo, Equatorial Guinea, Gabon and Nigeria. Despite this though, there are very few records of this elusive amphibian meaning that much of its distribution (and indeed population size) is simply presumed. The natural habitat of the African Tree Toad is subtropical or tropical moist, lowland forests and heavily degraded former forest, where there is a plentiful water supply. Today however, the African Tree Toad is generally restricted to taller forests.\nAfrican Tree Toad Behaviour and Lifestyle\nLike other Toads, the African Tree Toad is a semi-aquatic animal, although it is most commonly found in water when the female is laying her eggs. In a similar way to other tropical Toads, the African Tree Toad spends much of its life walking, hopping or running about on the ground where it is able to find plenty of food and water. When darkness falls however, the African Tree Toad retreats high into the surrounding vegetation to remain safe during the night from ground-dwelling predators. The colour and markings of their skin, gives the African Tree Toad camouflage amongst the surrounding forest, again giving it extra defence from hungry predators.\nAfrican Tree Toad Reproduction and Life Cycles\nLittle is really known about the reproduction of the African Tree Toad besides the fact that female African Tree Toads are known to lay up to 200 sticky eggs in small bodies of water found in hollow tree cavities. These spawning sites are then guarded by the male African Tree Toad until the tiny eggs hatch into tadpoles. It is unknown what the tadpoles feed on, but once developed, they hop out of their watery nest in the tree and begin hunting for food in the forest. African Tree Toads in captivity usually live until they are three or four years old but nothing is known about their lifespan in the wild.\nAfrican Tree Toad Diet and Prey\nThe African Tree Toad is a carnivorous amphibian that shoots its long, sticky tongue out of its mouth at incredible speeds to catch and secure its prey. This also helps the Toad to hold onto its catch whilst it is trying to eat it. The African Tree Toad primarily hunts small invertebrates including Insects, Worms and Spiders that scuttle amongst the debris on the forest floor. In a similar way to other Toad species, it is thought that the African Tree Toad sits in silence, waiting for lunch to pass by, before catching it with lighting speed.\nAfrican Tree Toad Predators and Threats\nDue to its small size, the African Tree Toad is believed to have numerous predators within its warm and wet, woodland environment. Fish, Birds, Lizards, Snakes, rodents and other, larger amphibians like Frogs and Toads are all thought to be common predators of the African Tree Toad. The largest assumed threat to the African Tree Toad is habitat loss in the form of deforestation and, to a lesser extent, both air and water pollution in their natural habitats. Little is known however about the direct affects of habitat loss on the species as a whole.\nAfrican Tree Toad Interesting Facts and Features\nVery little is known about the African Tree Toad, as only a handful of records exist throughout its very limited range, and there are in fact no records that confirm its existence through much of its so-called natural habitat. It is simply just assumed that the African Tree Toad exists in these areas.\nAfrican Tree Toad Relationship with Humans\nAlthough having been studied on a small scale by people, relatively little is still known about this tiny Toad. They have however been known to be involved in the exotic pet trade. The small size of the African Tree Toad makes them very hard to spot in their native habitats meaning that the affect of Human activity on the Toads in these areas is still unknown. Deforestation through much of their natural range, along with growing industry causing rising levels of pollution, are thought to be causing the African Tree Toad population to decline.\nAfrican Tree Toad Conservation Status and Life Today\nToday, the African tree toad is rarely seen in the African forests but it has been classified as a species that is of Least Concern of becoming extinct in the near future. This is however, based on their presumably wide distribution throughout Central Africa, despite the fact that they are only known to actually exist in a handful of these areas. It is widely assumed that the African Tree Toad populations are in decline.\n&nbsp;"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+[13] "Dog (also known as the Painted Dog and the Cape Hunting Dog) is a medium sized species of canine found across sub-Saharan Africa. The African Wild Dog is most easily identified from both domestic and other wild Dogs by their brightly mottled fur, with its name in Latin aptly meaning painted wolf. The African Wild Dog is said to be the most sociable of all the canines, living in packs of around 30 individuals. Sadly however, this highly intelligent and sociable animal is severely under threat in much of its natural habitat, primarily due to habitat loss and having been hunted by Humans.\nAfrican Wild Dog Anatomy and Appearance\nThe most distinctive feature of the African Wild Dog is its beautifully mottled fur which makes this canine very easy to identify. The fur of the African Wild Dog is red, black, white, brown and yellow in colour with the random pattern of colours being unique to each individual. It is also thought to act as a type of camouflage, helping the African Wild Dog to blend into its surroundings. The African Wild Dog also has large ears, a long muzzle and long legs, with four toes on each foot. This is one of the biggest differences between the African Wild Dog and other canine species as they have five. They also have a large stomach and a long, large intestine which aids them in more effectively absorbing moisture from their food.\nAfrican Wild Dog Distribution and Habitat\nAfrican Wild Dogs are found naturally roaming the deserts, open-plains and arid savanna of sub-Saharan Africa where the range of the African Wild Dog has decreased rapidly. It is thought that the African Wild Dog was once found in nearly 40 different African countries but that number is much lower today, at between 10 and 25. Now most African Wild Dog populations are primarily restricted to National Parks across southern Africa, with the highest populations found in Botswana and Zimbabwe. African Wild Dogs require large territories to support the pack, with pack sizes having in fact dropped in number with their decreasing home-ranges.\nAfrican Wild Dog Behaviour and Lifestyle\nAfrican Wild Dogs are highly sociable animals that gather in packs of generally between 10 and 30 individuals. There is a strict ranking system within the pack, led by the dominant breeding pair. They are the world's most sociable Dogs and do everything as a group, from hunting for and sharing food, to helping sick members and assisting in raising young. African Wild Dogs communicate between one another through touch, movement and sound. Pack members are incredibly close, gathering together before a hunt to nose and lick each other, whilst wagging their tails and making high-pitched noises. African Wild Dogs lead a crepuscular lifestyle meaning that they are most active during dawn and dusk.\nAfrican Wild Dog Reproduction and Life Cycles\nIn African Wild Dog packs, there is usually only one breeding pair, which are the dominant male and female members. After a gestation period of around 70 days, the female African Wild Dog gives birth to between 2 and 20 pups in a den, which she remains in with her young for the first few weeks, relying on the other pack members to provide her with food. The African Wild Dog cubs leave the den at between 2 and 3 months old and are fed and cared for by the entire pack until they are old enough to become independent and generally leave to join or start another African Wild Dog pack. It is thought that the more looked after the pups are, the higher their chances of survival.\nAfrican Wild Dog Diet and Prey\nThe African Wild Dog is a carnivorous and opportunistic predator, hunting larger animals on the African plains in their big groups. African Wild Dogs primarily prey on large mammals such as Warthogs and numerous species of Antelope, supplementing their diet with Rodents, Lizards, Birds and Insects. They are even known to hunt much larger herbivores that have been made vulnerable through sickness or injury, such as Wildebeest. Although the African Wild Dog's prey is often much faster, the chase can last for miles, and it is this Dog's stamina and perseverance that makes them so successful, along with their ability to maintain their speed. Hunting as a pack also means that the African Wild Dogs can easily corner their prey.\nAfrican Wild Dog Predators and Threats\nDue to the relatively large size and dominant nature of the African Wild Dog and their pack, they have few natural predators within their native habitats. Lions and Hyenas have been known on occasion, to prey on African Wild Dog individuals that have been separated from the rest of the group. One of the biggest threats to the African Wild Dog are farmers that hunt and kill the African Wild Dog in fear that they are preying on their livestock. A drastic decline in their natural habitats has also pushed the remaining African Wild Dog populations into small pockets of their native regions, and they are now most commonly found within National Parks.\nAfrican Wild Dog Interesting Facts and Features\nThe long large intestine of the African Wild Dog means that they have a very efficient system for absorbing as much moisture from their food as possible. This gives these canines an advantage in such arid climates as they do not need to find such a regular supply of water. African Wild Dogs are therefore able to go for long periods of time without needing to drink. Unlike many other carnivores, African Wild Dogs kill their prey by starting to bite it when it is still alive. Although this may sound cruel, the animal actually dies more quickly and less painfully than if it was killed in the generally preferred way.\nAfrican Wild Dog Relationship with Humans\nAfrican Wild Dog populations have been declining rapidly across the southern African countries mainly due to loss of much of their natural habitat and the fact that they are commonly hunted by farmers in particular. The slightly savage nature of the African Wild Dog has led to a great deal of superstition regarding it, with locals having almost wiped out entire populations in certain areas. The loss of their historical ranges generally due to growing Human settlements has also led to drastic declines in populations throughout much of their environment. Although the majority of the African Wild Dog population is today confined to National Parks, they tend to require much larger territories and come into conflict with Humans when they leave these protected areas.\nAfrican Wild Dog Conservation Status and Life Today\nToday, the African Wild Dog is listed as an Endangered species as African Wild Dog population numbers have been rapidly declining, particularly in recent years. There are thought to be less than 5,000 individuals left roaming sub-Saharan Africa today, with numbers still declining. Hunting, habitat loss and the fact that they are particularly vulnerable to the spread of disease by livestock, are the main causes for the continent's African Wild Dog loss.\n&nbsp;"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+[14] "is thought to be one of the oldest breeds of dog in the world, first bred by the indigenous Ainu people of Hokkaido, to hunt Salmon, Deer and Bears. Despite being hunter-gatherers that survived in freezing conditions, the Ainu are thought to have kept Dogs from the very beginning and respected them in nearly the same way as other Humans. The Ainu Dog is thought to have descended from medium-sized Dogs that arrived on the island with migrants from the main island around 3,000 years ago. Today, despite its strong links to the Ainu people, it is more commonly referred to as the Hokkaido-Ken by the native Japanese people. Although the characteristics of the Ainu dog are thought to have changed a little over the years due to cross-breeding, this breed is said to still have a very wild streak.\nAinu Dog Physical Characteristics\nThe Ainu Dog is a medium sized canine that is well known for its strength and power. Generally the double coat of thick fur used to keep the Dog warm, is light in colour, with white, grey and fawn being especially common. They are known to have a fearsome expression, due to their small dark, brown eyes, a broad head and a pointed muzzle that is tipped with a black nose. The ears of the Ainu Dog are small and sharply pointed making this breed appear even more alert. The tongue of the Ainu Dog is commonly covered in black spots which is said to suggest a relation to the Chow Chow, a smaller species of domestic Dog that is natively found in neighbouring China.\nAinu Dog Behaviour and Temperament\nThe Ainu Dog breed is a naturally wild and powerful Dog, making this breed an excellent guard Dog, They are also suspicious and alert and incredibly courageous when needing to protect their owner. The Ainu Dog is well known for its faithfulness, bravery, and the ability to withstand the cold, among its other desirable traits. It has an innate sense of direction and can therefore return to its master no matter how great the distance it has travelled alone. The Ainu Dog is also known to howl, making a similar sound to that of a Wolf, when it believes it has done good by its keeper. They are incredibly active Dogs and are known to not be suitable for apartment living or in households that contain other animals or young children.\nAinu Dog Breeding\nThe Ainu Dog was originally bred by the indigenous hunter-gathers to both help them to catch food, but also to protect them from large animals. Since then, the breed has changed slightly from these original Dogs, due to cross-breeding with similar domestic breeds throughout the Far East. Despite its long history as a working breed, the Ainu Dog ideally now combines the roles of family pet and hunter. Today, Ainu Dogs are most commonly kept for hunting or as guard Dogs due to their alert and incredibly bold nature. On average, the female has around 7 puppies per litter which, like many other canines, are born both blind and with hardly any fur. Within their first month however, the Ainu Dog puppies will be up on their feet and begin to grow fast. The Ainu Dog can live to be 14 years old and is known to have relatively few genetic health issues.\nAinu Dog Interesting Facts and Features\nThe Ainu Dog has made a name for itself through its courage nature, known to actually take on very large Bears, a number of times their size, in order to protect their owner. Today, although they can be found in households in parts of Europe and America, the Ainu Dog is most commonly found in Japan, where it remains to be considered a cherished national breed by the Japanese people. The Ainu Dog was officially named the Hokkaido-Ken in 1937, despite its rich history with the Ainu people.\n&nbsp;"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+[15] "of species of other domestic Dog, the origins of the Airedale Terrier are well known. This breed was created 150 years ago by working class farmers in a valley in the West Riding of Yorkshire. Cross-bred from a Welsh Terrier and an Otter Hound, the Airedale Terrier quickly became the Terrier of choice and was officially recognised in 1886. The Airedale Terrier is the largest of all Terrier breeds and was originally bred as a hunter of small animals, particularly rats. Although the large size of the Airedale Terrier meant that it cannot actually go underground, they were very efficient at catching the rats once they had surfaced. The Airedale Terrier has many desirable traits, including being very intelligent meaning that they have also been used as messengers and police Dogs.\nAiredale Terrier Physical Characteristics\nThe Airedale Terrier has a large square body which is only emphasised by its incredibly straight front legs and a deep, wide chest. Its long head and muzzle are both broad and flat, and it has small pointed ears which are almost always folded down. The stiff, slightly curved tail of the Airedale Terrier is usually docked and tends to most commonly be black in colour. The majority of this breed's stocky body is tan in colour (including its ears), with black and sometimes reddish coloured markings. Their double coat of fur is waterproof with a coarse and wiry layer, that is lined by softer warmer fur (a characteristic of the Otter Hound). The Airedale Terrier also has a very keen sense of smell due to its combination of Hound and Terrier.\nAiredale Terrier Behaviour and Temperament\nThe Airedale Terrier is known to be a loyal and very intelligent breed of domestic Dog. They are known to be independent and strong-willed, and will often form a close bond with their master and family. The Airedale Terrier is an incredibly sociable Dog and does not appreciate being left without Human companionship for long periods of time. They are known to be quite destructive if they become bored. Airedale Terriers are incredibly active and should be able to get a lot of exercise, although this is something that does appear to subside slightly with age. Like other Terriers, the Airedale Terrier should be trained from an early age as they can be fairly stubborn at times, but are known to be able to co-inhabit households peacefully with other animals and children if properly trained.\nAiredale Terrier Breeding\nThe Airedale Terrier was first bred in the 1800s from a Welsh Terrier and an Otter Hound in order to produce a breed that had desirable qualities found in both breeds. Due to the fact that they have been bred as hunting Dogs from the start, the Airedale Terrier is naturally a very intelligent and loyal breed. Females gives birth to average litter sizes of between 7 and 10 puppies that, like many other canines, are born both blind and relatively hairless and it takes at least a couple of weeks before they are able to first see the world. Airedale Terriers should be groomed regularly to reduce the risk of heavy moulting and to prevent skin infections.\nAiredale Terrier Interesting Facts and Features\nThe Airedale Terrier is named after the river Aire, which runs through the surrounding valleys that this breed first originated from in Yorkshire. The area was said to have a bigger problem with rats than usual so these larger ratters begin to become the Terrier of choice with the locals. The Airedale Terrier usually lives to be around 13 years old but they are known to suffer from genetic defects including problems with their hips and eyes."                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+[16] "a large, white breed of domestic Dog, native to the plains and mountains of western Turkey. The Akbash is a guard Dog and was originally bred by shepherds around 3,000 years ago to create a white-coloured Dog that could guard their flock of Sheep. Although the exact reasons for this particular choice in colour are unknown, it is widely believed that a white guard Dog was wanted, to ensure that it wasn't mistaken for a hungry predator, such as a Wolf. The Akbash is an ancient breed of domestic Dog and although it is thought to have derived from similar breeds in Italy and Hungary, its exact ancestry is not really known. These other continental guard Dogs however, were thought to have been brought into Europe from parts of Asia.\nAkbash Physical Characteristics\nThe Akbash is a large and powerful breed of Dog, that is perfectly built for a life of Sheep guarding in the mountains. It has a short to medium length coat, which is white in colour with occasional patches of light brown. The coat of the Akbash is coarse to prevent it from matting when exposed to the alpine elements, and the double-layer allows it to also be water-resistant, protecting the Akbash from getting too cold. The Akbash has a big head and powerful jaws, along with a very strong body, a short neck and large, curved toes. The tail of the Akbash is very distinctive to the breed as it is not only long and curved, but is also covered in longer, feathered fur. The Akbash has thickly padded feet and almond-shaped eyes that vary from gold to dark brown in colour.\nAkbash Behaviour and Temperament\nThe Akbash was originally bred by shepherds to guard their flocks from large mountain predators, so they are naturally a dominant and aggressive breed. They are one of the most primitive guard Dogs among domestic breeds today and therefore require a firm and experienced owner. They are however, intelligent and courageous animals that risk their lives to protect the animals and people under their guard. The Akbash is a very loyal breed, completely devoted and dedicated to their owner and often regard strangers that are not in their owner's presence, as suspicious. The Akbash is very independent with strong and protective instincts, known to respond quickly and without help in the case of emergency, when it feels that its flock is under threat.\nAkbash Breeding\nThe Akbash breed first appeared roughly 3,000 years ago, when it was bred to be a strong and protective guard Dog that was white in colour. Although the breed itself has changed very little since the early days, individuals found in households today are less dominant and aggressive than these original guard dogs. They are however still bred to guard livestock, particularly on the ranches in southern America where they are used to protect animals from large carnivores like Coyotes and even Bears. Since their introduction the USA in the 1970s, the breed has become a popular guard Dog and although affected by hip problems like other larger breeds, they are not thought to be so badly affected. The Akbash tends to give birth to between 7 and 9 puppies per litter, which are fully mobile within their first 6 weeks,\nAkbash Interesting Facts and Features\nThe Akbash is known to be a calm and clean breed of domestic Dog, and happily lives both inside and outside the house. Their fur also has little odour compared to that of other breeds. They are also known to have strong maternal instincts, and have been observed aiding Sheep in cleaning their newborn calves. In its native country of Turkey, the Akbash was named after the Turkish word akbas, which means \"white-headed\". The Akbash breed first became popular as a household pet when 40 Dogs were imported into the USA from Turkey in the 1970s. These Akbash individuals are thought to be the ancestors of the entire population there today."                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </code></pre>
+</div>
+</div>
+</section>
+<section id="model-ready-data" class="slide level2 textcenter">
+<h2>Model-ready data</h2>
+<div class="cell">
+<div class="cell-output-stdout">
+<pre><code>      [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10] [,11]
+ [1,]   13   29    7    0    0    0    3    1    2     9     1
+ [2,]   10    0    0   27    0    0    1    1    0     1     1
+ [3,]   18    0    4    0   47    0    0    0    6     5     2
+ [4,]   13    0    0    0    0    0    0    0    2     3     1
+ [5,]   12    0    2    0    0   27    0    0    3     1     3
+ [6,]   14    0    3    0    0    0    6   67    2     8     5
+ [7,]   17    0    1    0    0    0    2   55    4     4     2
+ [8,]   19    0    2    0    0    0    3   51    3     8     4
+ [9,]   12    0    3    0    0    0    3   59    2     4     3
+[10,]   22    0    2    0    0    0    3   44    2     4     3
+[11,]   27    0    0    0    0    0    3   47    3     7     2
+[12,]   14    0    1    0    0    0    2   45    1     2     2
+[13,]   17    0    1    0    0    0    4   51    1     7     3
+[14,]   16    0    0    0    0    0    0    0    0     3     2
+[15,]   17    0    3    0    0    0    0    0    0     2     2</code></pre>
+</div>
+</div>
+</section>
+<section id="section-1" class="slide level2" data-background-image="https://images.unsplash.com/photo-1495640388908-05fa85288e61?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=774&amp;q=80" data-background-size="contain" data-background-position="left">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+
+</div><div class="column" style="width:60%;">
+<h3 class="r-fit-text" id="same-steps">Same Steps</h3>
+<div>
+<div class="r-fit-text">
+<ul>
+<li class="fragment">Turn <span class="red">text</span> into <span class="orange">tokens</span></li>
+<li class="fragment">Modify <span class="orange">tokens</span></li>
+<li class="fragment">(Fancily) Count the <span class="orange">tokens</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Photo by <a href="https://unsplash.com/@mrrrk_smith?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">John-Mark Smith</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+</div>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><br> <br> <br></p>
+<div class="r-fit-text">
+<ul>
+<li>Integrates with <strong>recipes</strong> package</li>
+<li>Modular</li>
+<li>Flexible</li>
+<li>Extensible</li>
+</ul>
+</div>
+</div><div class="column" style="width:35%;">
+<p><img data-src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/textrecipes.png"></p>
+</div>
+</div>
+</section>
+<section>
+<section id="section-3" class="title-slide slide level1 title center">
+<h1></h1>
+<div class="r-fit-text">
+<p><span class="flow">Tokenization</span></p>
+</div>
+<div class="footer">
+<p><a href="google.com"></a></p>
+</div>
+</section>
+<section id="tokenization" class="slide level2">
+<h2>Tokenization</h2>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(recipes)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">library</span>(textrecipes)</span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="fu">recipe</span>(<span class="sc">~</span> text, <span class="at">data =</span> animals) <span class="sc">%&gt;%</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">step_tokenize</span>(text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-stdout">
+<pre><code>"aardvark" "classification" "and" "evolution" "aardvarks" "a ...
+"abyssinian" "history" "and" "domestication" "the" "abyssini ...
+"adelie" "penguin" "classification" "and" "evolution" "the"  ...
+"affenpinscher" "history" "and" "domestication" "the" "affen ...
+"afghan" "hound" "history" "and" "domestication" "the" "afgh ...
+"african" "bush" "elephant" "classification" "and" "evolutio ...
+"african" "civet" "classification" "and" "evolution" "the" " ...
+"african" "clawed" "frog" "classification" "and" "evolution" ...
+"african" "forest" "elephant" "classification" "and" "evolut ...
+"african" "palm" "civet" "classification" "and" "evolution"  ...</code></pre>
+</div>
+</div>
+</section>
+<section id="tokenization---character" class="slide level2">
+<h2>Tokenization - character</h2>
+<div class="cell">
+<div class="sourceCode" id="cb5" data-code-line-numbers="5"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">library</span>(recipes)</span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="fu">library</span>(textrecipes)</span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="fu">recipe</span>(<span class="sc">~</span> text, <span class="at">data =</span> animals) <span class="sc">%&gt;%</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a>  <span class="fu">step_tokenize</span>(text, <span class="at">token =</span> <span class="st">"characters"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-stdout">
+<pre><code>"a" "a" "r" "d" "v" "a" "r" "k" "c" "l" "a" "s" "s" "i" "f"  ...
+"a" "b" "y" "s" "s" "i" "n" "i" "a" "n" "h" "i" "s" "t" "o"  ...
+"a" "d" "e" "l" "i" "e" "p" "e" "n" "g" "u" "i" "n" "c" "l"  ...
+"a" "f" "f" "e" "n" "p" "i" "n" "s" "c" "h" "e" "r" "h" "i"  ...
+"a" "f" "g" "h" "a" "n" "h" "o" "u" "n" "d" "h" "i" "s" "t"  ...
+"a" "f" "r" "i" "c" "a" "n" "b" "u" "s" "h" "e" "l" "e" "p"  ...
+"a" "f" "r" "i" "c" "a" "n" "c" "i" "v" "e" "t" "c" "l" "a"  ...
+"a" "f" "r" "i" "c" "a" "n" "c" "l" "a" "w" "e" "d" "f" "r"  ...
+"a" "f" "r" "i" "c" "a" "n" "f" "o" "r" "e" "s" "t" "e" "l"  ...
+"a" "f" "r" "i" "c" "a" "n" "p" "a" "l" "m" "c" "i" "v" "e"  ...</code></pre>
+</div>
+</div>
+</section>
+<section id="tokenization---byte-pair-encoding-tokenizers.bpe" class="slide level2">
+<h2>Tokenization - Byte Pair Encoding {tokenizers.bpe}</h2>
+<div class="cell">
+<div class="sourceCode" id="cb7" data-code-line-numbers="5"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">library</span>(recipes)</span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="fu">library</span>(textrecipes)</span>
+<span id="cb7-3"><a href="#cb7-3"></a></span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="fu">recipe</span>(<span class="sc">~</span> text, <span class="at">data =</span> animals) <span class="sc">%&gt;%</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a>  <span class="fu">step_tokenize_bpe</span>(text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-stdout">
+<pre><code>"▁A" "ard" "v" "ar" "k" "▁C" "l" "as" "s" "if" "ic" "ation"  ...
+"▁A" "b" "y" "s" "s" "in" "i" "an" "▁H" "ist" "or" "y" "▁and ...
+"▁A" "d" "el" "i" "e" "▁P" "en" "g" "u" "in" "▁C" "l" "as" " ...
+"▁A" "f" "f" "en" "p" "in" "s" "c" "her" "▁H" "ist" "or" "y" ...
+"▁A" "f" "gh" "an" "▁H" "ound" "▁H" "ist" "or" "y" "▁and" "▁ ...
+"▁A" "f" "r" "ic" "an" "▁B" "us" "h" "▁" "E" "le" "p" "h" "a ...
+"▁A" "f" "r" "ic" "an" "▁C" "ive" "t" "▁C" "l" "as" "s" "if" ...
+"▁A" "f" "r" "ic" "an" "▁C" "l" "a" "w" "ed" "▁F" "ro" "g" " ...
+"▁A" "f" "r" "ic" "an" "▁F" "ore" "st" "▁" "E" "le" "p" "h"  ...
+"▁A" "f" "r" "ic" "an" "▁P" "al" "m" "▁C" "ive" "t" "▁C" "l" ...</code></pre>
+</div>
+</div>
+</section>
+<section id="tokenization---sentencepiece-sentencepiece" class="slide level2">
+<h2>Tokenization - SentencePiece {sentencepiece}</h2>
+<div class="cell">
+<div class="sourceCode" id="cb9" data-code-line-numbers="5"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">library</span>(recipes)</span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">library</span>(textrecipes)</span>
+<span id="cb9-3"><a href="#cb9-3"></a></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="fu">recipe</span>(<span class="sc">~</span> text, <span class="at">data =</span> animals) <span class="sc">%&gt;%</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a>  <span class="fu">step_tokenize_sentencepiece</span>(text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-stdout">
+<pre><code>"▁A" "ard" "v" "ark" "▁C" "l" "ass" "ific" "ation" "▁and" "▁ ...
+"▁A" "b" "y" "ss" "in" "ian" "▁H" "ist" "or" "y" "▁and" "▁D" ...
+"▁A" "d" "el" "ie" "▁P" "enguin" "▁C" "l" "ass" "ific" "atio ...
+"▁Af" "f" "en" "p" "ins" "c" "her" "▁H" "ist" "or" "y" "▁and ...
+"▁Af" "gh" "an" "▁H" "ound" "▁H" "ist" "or" "y" "▁and" "▁D"  ...
+"▁African" "▁B" "us" "h" "▁E" "lephant" "▁C" "l" "ass" "ific ...
+"▁African" "▁C" "ive" "t" "▁C" "l" "ass" "ific" "ation" "▁an ...
+"▁African" "▁C" "l" "aw" "ed" "▁F" "ro" "g" "▁C" "l" "ass" " ...
+"▁African" "▁F" "orest" "▁E" "lephant" "▁C" "l" "ass" "ific" ...
+"▁African" "▁P" "al" "m" "▁C" "ive" "t" "▁C" "l" "ass" "ific ...</code></pre>
+</div>
+</div>
+</section>
+<section id="tokenization---wordpiece-wordpiece" class="slide level2">
+<h2>Tokenization - WordPiece {wordpiece}</h2>
+<div class="cell">
+<div class="sourceCode" id="cb11" data-code-line-numbers="5"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">library</span>(recipes)</span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="fu">library</span>(textrecipes)</span>
+<span id="cb11-3"><a href="#cb11-3"></a></span>
+<span id="cb11-4"><a href="#cb11-4"></a><span class="fu">recipe</span>(<span class="sc">~</span> text, <span class="at">data =</span> animals) <span class="sc">%&gt;%</span></span>
+<span id="cb11-5"><a href="#cb11-5"></a>  <span class="fu">step_tokenize_wordpiece</span>(text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-stdout">
+<pre><code>"▁A" "ardvark" "▁C" "l" "ass" "ific" "ation" "▁and" "▁Evolut ...
+"▁Abyssinian" "▁H" "ist" "ory" "▁and" "▁D" "om" "estic" "ati ...
+"▁Adelie" "▁Penguin" "▁C" "l" "ass" "ific" "ation" "▁and" "▁ ...
+"▁Affenpinscher" "▁H" "ist" "ory" "▁and" "▁D" "om" "estic" " ...
+"▁Afghan" "▁Hound" "▁H" "ist" "ory" "▁and" "▁D" "om" "estic" ...
+"▁African" "▁Bush" "▁Elephant" "▁C" "l" "ass" "ific" "ation" ...
+"▁African" "▁Civet" "▁C" "l" "ass" "ific" "ation" "▁and" "▁E ...
+"▁African" "▁Clawed" "▁Frog" "▁C" "l" "ass" "ific" "ation" " ...
+"▁African" "▁Forest" "▁Elephant" "▁C" "l" "ass" "ific" "atio ...
+"▁African" "▁Palm" "▁Civet" "▁C" "l" "ass" "ific" "ation" "▁ ...</code></pre>
+</div>
+</div>
+</section>
+<section id="section-4" class="slide level2" data-background-image="https://images.unsplash.com/photo-1548191194-b3d4f051fd7d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=774&amp;q=80" data-background-size="contain" data-background-position="right">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="r-fit-text">
+<p>No free lunch</p>
+</div>
+<div class="r-fit-text">
+<p>More information at <a href="https://smltar.com/tokenization.html">smltar.com/tokenization</a></p>
+</div>
+</div><div class="column" style="width:60%;">
+
+</div>
+</div>
+<div class="footer">
+<p>Photo by <a href="https://unsplash.com/@_thedl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Lezcano</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+</div>
+</section></section>
+<section>
+<section id="section-5" class="title-slide slide level1 title center">
+<h1></h1>
+<div class="r-fit-text">
+<p><span class="flow">Modify</span></p>
+</div>
+<div class="footer">
+<p><a href="google.com"></a></p>
+</div>
+</section>
+<section id="token-modification---stemming" class="slide level2">
+<h2>Token modification - stemming</h2>
+<div class="cell">
+<div class="sourceCode" id="cb13" data-code-line-numbers="6"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">library</span>(recipes)</span>
+<span id="cb13-2"><a href="#cb13-2"></a><span class="fu">library</span>(textrecipes)</span>
+<span id="cb13-3"><a href="#cb13-3"></a></span>
+<span id="cb13-4"><a href="#cb13-4"></a><span class="fu">recipe</span>(<span class="sc">~</span> text, <span class="at">data =</span> animals) <span class="sc">%&gt;%</span></span>
+<span id="cb13-5"><a href="#cb13-5"></a>  <span class="fu">step_tokenize</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb13-6"><a href="#cb13-6"></a>  <span class="fu">step_stem</span>(text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-stdout">
+<pre><code>"aardvark" "classif" "and" "evolut" "aardvark" "ar" "small"  ...
+"abyssinian" "histori" "and" "domest" "the" "abyssinian" "ca ...
+"adeli" "penguin" "classif" "and" "evolut" "the" "adeli" "pe ...
+"affenpinsch" "histori" "and" "domest" "the" "affenpinsch" " ...
+"afghan" "hound" "histori" "and" "domest" "the" "afghan" "ho ...
+"african" "bush" "eleph" "classif" "and" "evolut" "the" "afr ...
+"african" "civet" "classif" "and" "evolut" "the" "african" " ...
+"african" "claw" "frog" "classif" "and" "evolut" "the" "afri ...</code></pre>
+</div>
+</div>
+</section>
+<section id="token-modification---stopwords" class="slide level2">
+<h2>Token modification - stopwords</h2>
+<div class="cell">
+<div class="sourceCode" id="cb15" data-code-line-numbers="6"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">library</span>(recipes)</span>
+<span id="cb15-2"><a href="#cb15-2"></a><span class="fu">library</span>(textrecipes)</span>
+<span id="cb15-3"><a href="#cb15-3"></a></span>
+<span id="cb15-4"><a href="#cb15-4"></a><span class="fu">recipe</span>(<span class="sc">~</span> text, <span class="at">data =</span> animals) <span class="sc">%&gt;%</span></span>
+<span id="cb15-5"><a href="#cb15-5"></a>  <span class="fu">step_tokenize</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb15-6"><a href="#cb15-6"></a>  <span class="fu">step_stopwords</span>(text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-stdout">
+<pre><code>"aardvark" "classification" "evolution" "aardvarks" "small"  ...
+"abyssinian" "history" "domestication" "abyssinian" "cat" "t ...
+"adelie" "penguin" "classification" "evolution" "adelie" "pe ...
+"affenpinscher" "history" "domestication" "affenpinscher" "t ...
+"afghan" "hound" "history" "domestication" "afghan" "hound"  ...
+"african" "bush" "elephant" "classification" "evolution" "af ...
+"african" "civet" "classification" "evolution" "african" "ci ...
+"african" "clawed" "frog" "classification" "evolution" "afri ...</code></pre>
+</div>
+</div>
+</section>
+<section id="token-modification---stopwords-inverse" class="slide level2">
+<h2>Token modification - stopwords (inverse)</h2>
+<div class="cell">
+<div class="sourceCode" id="cb17" data-code-line-numbers="6"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">library</span>(recipes)</span>
+<span id="cb17-2"><a href="#cb17-2"></a><span class="fu">library</span>(textrecipes)</span>
+<span id="cb17-3"><a href="#cb17-3"></a></span>
+<span id="cb17-4"><a href="#cb17-4"></a><span class="fu">recipe</span>(<span class="sc">~</span> text, <span class="at">data =</span> animals) <span class="sc">%&gt;%</span></span>
+<span id="cb17-5"><a href="#cb17-5"></a>  <span class="fu">step_tokenize</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb17-6"><a href="#cb17-6"></a>  <span class="fu">step_stopwords</span>(text, <span class="at">keep =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-stdout">
+<pre><code>"and" "are" "that" "are" "a" "of" "of" "the" "they" "are" "a ...
+"and" "the" "is" "to" "be" "of" "the" "of" "in" "the" "as" " ...
+"and" "the" "is" "the" "and" "most" "of" "in" "the" "and" "i ...
+"and" "the" "is" "to" "be" "of" "the" "in" "during" "the" "t ...
+"and" "the" "is" "to" "be" "of" "the" "of" "all" "with" "the ...
+"and" "the" "is" "the" "of" "all" "on" "with" "some" "to" "m ...
+"and" "the" "is" "a" "of" "the" "is" "the" "only" "in" "its" ...
+"and" "the" "is" "a" "of" "that" "is" "at" "the" "of" "and"  ...</code></pre>
+</div>
+</div>
+</section>
+<section id="token-modification---n-grams" class="slide level2">
+<h2>Token modification - n-grams</h2>
+<div class="cell">
+<div class="sourceCode" id="cb19" data-code-line-numbers="6-7"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">library</span>(recipes)</span>
+<span id="cb19-2"><a href="#cb19-2"></a><span class="fu">library</span>(textrecipes)</span>
+<span id="cb19-3"><a href="#cb19-3"></a></span>
+<span id="cb19-4"><a href="#cb19-4"></a><span class="fu">recipe</span>(<span class="sc">~</span> text, <span class="at">data =</span> animals) <span class="sc">%&gt;%</span></span>
+<span id="cb19-5"><a href="#cb19-5"></a>  <span class="fu">step_tokenize</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb19-6"><a href="#cb19-6"></a>  <span class="fu">step_stem</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb19-7"><a href="#cb19-7"></a>  <span class="fu">step_ngram</span>(text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-stdout">
+<pre><code>"aardvark_classif_and" "classif_and_evolut" "and_evolut_aard ...
+"abyssinian_histori_and" "histori_and_domest" "and_domest_th ...
+"adeli_penguin_classif" "penguin_classif_and" "classif_and_e ...
+"affenpinsch_histori_and" "histori_and_domest" "and_domest_t ...
+"afghan_hound_histori" "hound_histori_and" "histori_and_dome ...
+"african_bush_eleph" "bush_eleph_classif" "eleph_classif_and ...
+"african_civet_classif" "civet_classif_and" "classif_and_evo ...</code></pre>
+</div>
+</div>
+</section>
+<section id="text-normalization" class="slide level2">
+<h2>Text normalization</h2>
+<div class="cell">
+
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a>text</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-stdout">
+<pre><code>[1] "schön" "schön"</code></pre>
+</div>
+</div>
+<p><br> <br></p>
+<div class="cell">
+<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>text[<span class="dv">1</span>] <span class="sc">==</span> text[<span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+
+</div>
+</div>
+</section>
+<section id="text-normalization-1" class="slide level2">
+<h2>Text normalization</h2>
+<div class="cell">
+<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a>text <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"sch\U00f6n"</span>, <span class="st">"scho\U0308n"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a>text</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-stdout">
+<pre><code>[1] "schön" "schön"</code></pre>
+</div>
+</div>
+<p><br> <br></p>
+<div class="cell">
+<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a>text[<span class="dv">1</span>] <span class="sc">==</span> text[<span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><br> <br> <br> <br></p>
+<div class="r-fit-text">
+<p><a href="https://textrecipes.tidymodels.org/reference/step_text_normalization.html">step_text_normalization()</a></p>
+<p>can handle this</p>
+</div>
+</div>
+</div>
+</section>
+<section id="section-6" class="slide level2" data-background-image="https://images.unsplash.com/photo-1547104442-9f0af4f37a87?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80" data-background-size="contain" data-background-position="left">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+
+</div><div class="column" style="width:60%;">
+<div class="r-fit-text">
+<p><a href="https://textrecipes.tidymodels.org/reference/index.html">Many more steps</a></p>
+<p>and more to come</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Photo by <a href="https://unsplash.com/@sincerelymedia?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sincerely Media</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+</div>
+</section></section>
+<section>
+<section id="section-7" class="title-slide slide level1 title center">
+<h1></h1>
+<div class="r-fit-text">
+<p><span class="flow">Numbers</span></p>
+</div>
+<div class="footer">
+<p><a href="google.com"></a></p>
+</div>
+</section>
+<section id="getting-numbers---term-frequency" class="slide level2">
+<h2>Getting numbers! - Term frequency</h2>
+<div class="cell">
+<div class="sourceCode" id="cb30" data-code-line-numbers="9"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a><span class="fu">library</span>(recipes)</span>
+<span id="cb30-2"><a href="#cb30-2"></a><span class="fu">library</span>(textrecipes)</span>
+<span id="cb30-3"><a href="#cb30-3"></a></span>
+<span id="cb30-4"><a href="#cb30-4"></a><span class="fu">recipe</span>(<span class="sc">~</span> text, <span class="at">data =</span> animals) <span class="sc">%&gt;%</span></span>
+<span id="cb30-5"><a href="#cb30-5"></a>  <span class="fu">step_tokenize</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb30-6"><a href="#cb30-6"></a>  <span class="fu">step_stem</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb30-7"><a href="#cb30-7"></a>  <span class="fu">step_ngram</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb30-8"><a href="#cb30-8"></a>  <span class="fu">step_tokenfilter</span>(text, <span class="at">max_tokens =</span> <span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb30-9"><a href="#cb30-9"></a>  <span class="fu">step_tf</span>(text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-stdout">
+<pre><code>     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10] [,11]
+[1,]    1    2    2    0    0    1    0    0    2     1     0
+[2,]    0    0    0    1    1    0    0    0    0     0     0
+[3,]    0    0    0    0    1    0    0    0    1     1     1
+[4,]    0    4    1    0    0    0    0    0    0     0     0</code></pre>
+</div>
+</div>
+</section>
+<section id="getting-numbers---tf-idf" class="slide level2">
+<h2>Getting numbers! - TF-IDF</h2>
+<div class="cell">
+<div class="sourceCode" id="cb32" data-code-line-numbers="9"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="fu">library</span>(recipes)</span>
+<span id="cb32-2"><a href="#cb32-2"></a><span class="fu">library</span>(textrecipes)</span>
+<span id="cb32-3"><a href="#cb32-3"></a></span>
+<span id="cb32-4"><a href="#cb32-4"></a><span class="fu">recipe</span>(<span class="sc">~</span> text, <span class="at">data =</span> animals) <span class="sc">%&gt;%</span></span>
+<span id="cb32-5"><a href="#cb32-5"></a>  <span class="fu">step_tokenize</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb32-6"><a href="#cb32-6"></a>  <span class="fu">step_stem</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb32-7"><a href="#cb32-7"></a>  <span class="fu">step_ngram</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb32-8"><a href="#cb32-8"></a>  <span class="fu">step_tokenfilter</span>(text, <span class="at">max_tokens =</span> <span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb32-9"><a href="#cb32-9"></a>  <span class="fu">step_tfidf</span>(text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-stdout">
+<pre><code>      [,1]   [,2]   [,3]   [,4]   [,5]   [,6] [,7] [,8]
+[1,] 0.029 0.0444 0.0653 0.0000 0.0000 0.0306    0    0
+[2,] 0.000 0.0000 0.0000 0.0676 0.0682 0.0000    0    0
+[3,] 0.000 0.0000 0.0000 0.0000 0.0324 0.0000    0    0
+[4,] 0.000 0.3204 0.1179 0.0000 0.0000 0.0000    0    0</code></pre>
+</div>
+</div>
+</section>
+<section id="getting-numbers---text-hashing" class="slide level2">
+<h2>Getting numbers! - Text hashing</h2>
+<div class="cell">
+<div class="sourceCode" id="cb34" data-code-line-numbers="8"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a><span class="fu">library</span>(recipes)</span>
+<span id="cb34-2"><a href="#cb34-2"></a><span class="fu">library</span>(textrecipes)</span>
+<span id="cb34-3"><a href="#cb34-3"></a></span>
+<span id="cb34-4"><a href="#cb34-4"></a><span class="fu">recipe</span>(<span class="sc">~</span> text, <span class="at">data =</span> animals) <span class="sc">%&gt;%</span></span>
+<span id="cb34-5"><a href="#cb34-5"></a>  <span class="fu">step_tokenize</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb34-6"><a href="#cb34-6"></a>  <span class="fu">step_stem</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb34-7"><a href="#cb34-7"></a>  <span class="fu">step_ngram</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb34-8"><a href="#cb34-8"></a>  <span class="fu">step_texthash</span>(text, <span class="at">num_terms =</span> <span class="dv">256</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-stdout">
+<pre><code>     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10] [,11]
+[1,]    1   -2    2   -1   -1    2    0   -1    2     2     0
+[2,]    0    0    0    0   -1    0    1   -1    1     2    -2
+[3,]    1   -1    0    3    0    0   -5    1    1    -2     0
+[4,]    0   -1    1    0    2    1    1   -1    1     0     0
+[5,]   -3    3    0   -2   -2    0    1   -1    0    -1     1</code></pre>
+</div>
+</div>
+</section>
+<section id="section-8" class="slide level2" data-background-image="https://images.unsplash.com/photo-1550399105-05c4a7641b02?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=774&amp;q=80" data-background-size="contain" data-background-position="right">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="r-fit-text">
+<p>Thank you!</p>
+<ul>
+<li><p><a href="https://textrecipes.tidymodels.org">textrecipes</a></p></li>
+<li><p><a href="https://smltar.com/">smltar.com</a></p></li>
+<li><p><a href="https://www.emilhvitfeldt.com/">emilhvitfeldt.com/</a></p></li>
+<li><p><a href="https://twitter.com/Emil_Hvitfeldt"><span class="citation" data-cites="Emil_Hvitfeldt">@Emil_Hvitfeldt</span></a></p></li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+
+</div>
+</div>
+<div class="footer">
+<p>Photo by <a href="https://unsplash.com/@eddrobertson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ed Robertson</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+</div>
+<div class="footer footer-default">
+<p><a href="https://EmilHvitfeldt.github.io/useR2022-textrecipes/">EmilHvitfeldt.github.io/useR2022-textrecipes/</a></p>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1600,
+
+        height: 900,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          // dispatch for htmlwidgets
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for reveal
+        if (window.Reveal) {
+          window.Reveal.addEventListener("slidechanged", function(event) {
+            fireSlideChanged(event.previousSlide, event.currentSlide);
+          });
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        target: function(trigger) {
+          return trigger.previousElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        setTimeout(function() {
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto-reveal',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          let href = ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+        tippyHover(ref, function() {
+          var popup = window.document.createElement('div');
+          cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    });
+    </script>
+    
+
+</body></html>

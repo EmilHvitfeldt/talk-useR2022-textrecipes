@@ -1,0 +1,608 @@
+---
+format: 
+  revealjs:
+    theme: [default, style.scss]
+    width: 1600
+    height: 900
+    footer: '<a href="https://EmilHvitfeldt.github.io/useR2022-textrecipes/">EmilHvitfeldt.github.io/useR2022-textrecipes/</a>'
+---
+
+##  {.title}
+
+::: r-fit-text
+Improvements in
+
+text preprocessing
+
+using [textrecipes]{.flow}
+:::
+
+::: footer
+[  ](google.com)
+:::
+
+## Text data {.textcenter}
+
+```{r}
+library(animals)
+animals$text[1:16] |>
+  stringr::str_remove(".*\n\\w* \\w* \\w* ")
+```
+
+## Model-ready data {.textcenter}
+
+```{r}
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals[1:18, ]) %>%
+  step_tokenize(text) %>%
+  step_tokenfilter(text) %>%
+  step_tf(text) %>%
+  prep() %>%
+  bake(new_data = NULL) %>%
+  as.matrix() %>%
+  unname() %>%
+  .[1:15, 1:11]
+```
+
+##  {background-image="https://images.unsplash.com/photo-1495640388908-05fa85288e61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" background-size="contain" background-position="left"}
+
+::: columns
+::: {.column width="40%"}
+:::
+
+::: {.column width="60%"}
+### Same Steps {.r-fit-text}
+
+::: incremental
+::: r-fit-text
+-   Turn [text]{.red} into [tokens]{.orange}
+-   Modify [tokens]{.orange}
+-   (Fancily) Count the [tokens]{.orange}
+:::
+:::
+:::
+:::
+
+::: footer
+Photo by <a href="https://unsplash.com/@mrrrk_smith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">John-Mark Smith</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+:::
+
+##
+
+::: columns
+::: {.column width="60%"}
+
+<br> <br> <br>
+
+::: r-fit-text
+
+- Integrates with **recipes** package
+- Modular
+- Flexible
+- Extensible
+
+:::
+
+:::
+
+::: {.column width="35%"}
+![](https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/textrecipes.png)
+:::
+:::
+
+#  {.title}
+
+::: r-fit-text
+[Tokenization]{.flow}
+:::
+
+::: footer
+[  ](google.com)
+:::
+
+## Tokenization
+
+```{r}
+#| eval: false
+#| echo: true
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text)
+```
+
+<br>
+
+```{r}
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals[1:18, ]) %>%
+  step_tokenize(text) %>%
+  show_tokens(text, n = 10) %>%
+  purrr::walk(~cat(substr(paste0("\"", .x, "\"", collapse = " "), 1, 60), "...\n"))
+```
+
+## Tokenization - character
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "5"
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text, token = "characters")
+```
+
+<br>
+
+```{r}
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals[1:18, ]) %>%
+  step_tokenize(text, token = "characters") %>%
+  show_tokens(text, n = 10) %>%
+  purrr::walk(~cat(substr(paste0("\"", .x, "\"", collapse = " "), 1, 60), "...\n"))
+```
+
+## Tokenization - Byte Pair Encoding {tokenizers.bpe}
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "5"
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize_bpe(text)
+```
+
+<br>
+
+```{r}
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize_bpe(text, vocabulary_size = 300) %>%
+  show_tokens(text, n = 10) %>%
+  purrr::walk(~cat(substr(paste0("\"", .x, "\"", collapse = " "), 1, 60), "...\n"))
+```
+
+## Tokenization - SentencePiece {sentencepiece}
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "5"
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize_sentencepiece(text)
+```
+
+<br>
+
+```{r}
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize_sentencepiece(text) %>%
+  show_tokens(text, n = 10) %>%
+  purrr::walk(~cat(substr(paste0("\"", .x, "\"", collapse = " "), 1, 60), "...\n"))
+```
+
+## Tokenization - WordPiece {wordpiece}
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "5"
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize_wordpiece(text)
+```
+
+<br>
+
+```{r}
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals[1:18, ]) %>%
+  step_tokenize_bpe(text) %>%
+  show_tokens(text, n = 10) %>%
+  purrr::walk(~cat(substr(paste0("\"", .x, "\"", collapse = " "), 1, 60), "...\n"))
+```
+
+##  {background-image="https://images.unsplash.com/photo-1548191194-b3d4f051fd7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" background-size="contain" background-position="right"}
+
+::: columns
+::: {.column width="60%"}
+
+::: r-fit-text
+No free lunch
+:::
+
+
+::: r-fit-text
+More information at 
+[smltar.com/tokenization](https://smltar.com/tokenization.html)
+:::
+
+:::
+
+::: {.column width="60%"}
+:::
+:::
+
+::: footer
+Photo by <a href="https://unsplash.com/@_thedl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Lezcano</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+:::
+
+#  {.title}
+
+::: r-fit-text
+[Modify]{.flow}
+:::
+
+::: footer
+[  ](google.com)
+:::
+
+## Token modification - stemming
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "6"
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text) %>%
+  step_stem(text)
+```
+
+<br>
+
+```{r}
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text) %>%
+  step_stem(text) %>%
+  show_tokens(text, n = 8) %>%
+  purrr::walk(~cat(substr(paste0("\"", .x, "\"", collapse = " "), 1, 60), "...\n"))
+```
+
+## Token modification - stopwords
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "6"
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text) %>%
+  step_stopwords(text)
+```
+
+<br>
+
+```{r}
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text) %>%
+  step_stopwords(text) %>%
+  show_tokens(text, n = 8) %>%
+  purrr::walk(~cat(substr(paste0("\"", .x, "\"", collapse = " "), 1, 60), "...\n"))
+```
+
+## Token modification - stopwords (inverse)
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "6"
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text) %>%
+  step_stopwords(text, keep = TRUE)
+```
+
+<br>
+
+```{r}
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text) %>%
+  step_stopwords(text, keep = TRUE) %>%
+  show_tokens(text, n = 8) %>%
+  purrr::walk(~cat(substr(paste0("\"", .x, "\"", collapse = " "), 1, 60), "...\n"))
+```
+
+## Token modification - n-grams
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "6-7"
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text) %>%
+  step_stem(text) %>%
+  step_ngram(text)
+```
+
+<br>
+
+```{r}
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+ step_tokenize(text) %>%
+  step_stem(text) %>%
+  step_ngram(text) %>%
+  show_tokens(text, n = 7) %>%
+  purrr::walk(~cat(substr(paste0("\"", .x, "\"", collapse = " "), 1, 60), "...\n"))
+```
+
+## Text normalization
+
+```{r}
+text <- c("sch\U00f6n", "scho\U0308n")
+```
+
+
+::: columns
+::: {.column width="50%"}
+
+```{r}
+#| echo: true
+text
+```
+
+<br> <br>
+
+```{r}
+#| echo: true
+text[1] == text[2]
+```
+
+:::
+
+::: {.column width="50%"}
+
+:::
+:::
+
+## Text normalization
+
+```{r}
+#| echo: true
+text <- c("sch\U00f6n", "scho\U0308n")
+```
+
+
+::: columns
+::: {.column width="50%"}
+
+```{r}
+#| echo: true
+text
+```
+
+<br> <br>
+
+```{r}
+#| echo: true
+text[1] == text[2]
+```
+
+:::
+
+::: {.column width="50%"}
+
+<br> <br> <br> <br>
+
+::: r-fit-text
+
+[step_text_normalization()](https://textrecipes.tidymodels.org/reference/step_text_normalization.html)
+
+can handle this
+
+:::
+
+:::
+:::
+
+##  {background-image="https://images.unsplash.com/photo-1547104442-9f0af4f37a87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" background-size="contain" background-position="left"}
+
+::: columns
+::: {.column width="40%"}
+:::
+
+::: {.column width="60%"}
+
+::: r-fit-text
+[Many more steps](https://textrecipes.tidymodels.org/reference/index.html)
+
+and more to come
+:::
+
+:::
+:::
+
+::: footer
+Photo by <a href="https://unsplash.com/@sincerelymedia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sincerely Media</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+:::
+
+#  {.title}
+
+::: r-fit-text
+[Numbers]{.flow}
+:::
+
+::: footer
+[  ](google.com)
+:::
+
+## Getting numbers! - Term frequency
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "9"
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text) %>%
+  step_stem(text) %>%
+  step_ngram(text) %>%
+  step_tokenfilter(text, max_tokens = 100) %>%
+  step_tf(text)
+```
+
+<br>
+
+```{r}
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text) %>%
+  step_stem(text) %>%
+  step_ngram(text) %>%
+  step_tokenfilter(text, max_tokens = 100) %>%
+  step_tf(text) %>%
+  prep() %>%
+  bake(new_data = NULL) %>%
+  as.matrix() %>%
+  unname() %>%
+  .[1:4, 1:11]
+```
+
+## Getting numbers! - TF-IDF
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "9"
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text) %>%
+  step_stem(text) %>%
+  step_ngram(text) %>%
+  step_tokenfilter(text, max_tokens = 100) %>%
+  step_tfidf(text)
+```
+
+<br>
+
+```{r}
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text) %>%
+  step_stem(text) %>%
+  step_ngram(text) %>%
+  step_tokenfilter(text, max_tokens = 100) %>%
+  step_tfidf(text) %>%
+  prep() %>%
+  bake(new_data = NULL) %>%
+  as.matrix() %>%
+  unname() %>%
+  round(4) %>%
+  .[1:4, 1:8]
+```
+
+## Getting numbers! - Text hashing
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "8"
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text) %>%
+  step_stem(text) %>%
+  step_ngram(text) %>%
+  step_texthash(text, num_terms = 256)
+```
+
+<br>
+
+```{r}
+library(recipes)
+library(textrecipes)
+
+recipe(~ text, data = animals) %>%
+  step_tokenize(text) %>%
+  step_stem(text) %>%
+  step_ngram(text) %>%
+  step_texthash(text, num_terms = 256) %>%
+  prep() %>%
+  bake(new_data = NULL) %>%
+  as.matrix() %>%
+  unname() %>%
+  .[1:5, 1:11]
+```
+
+##  {background-image="https://images.unsplash.com/photo-1550399105-05c4a7641b02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" background-size="contain" background-position="right"}
+
+::: columns
+::: {.column width="40%"}
+
+::: r-fit-text
+
+Thank you!
+
+- [textrecipes](https://textrecipes.tidymodels.org)
+
+- [smltar.com](https://smltar.com/)
+
+- [emilhvitfeldt.com/](https://www.emilhvitfeldt.com/)
+
+- [@Emil_Hvitfeldt](https://twitter.com/Emil_Hvitfeldt)
+
+:::
+
+:::
+
+::: {.column width="60%"}
+:::
+:::
+
+::: footer
+Photo by <a href="https://unsplash.com/@eddrobertson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ed Robertson</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+:::
